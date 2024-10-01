@@ -37,7 +37,8 @@
     color: #09386f;
     border-bottom-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    width: 175px; /*Con este editamos fondo del nombre de la pagina about us*/
+    width: 350px; /*Con este editamos fondo del nombre de la pagina about us*/
+    height: auto;
     padding: 10px;
     text-align: center;
 }

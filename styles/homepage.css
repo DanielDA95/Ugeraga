@@ -26,8 +26,8 @@
     height: 600px;
     background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg);
     background-color: #cea135;
-    border-top: 4px solid #09106f;
-    border-bottom: 4px solid #09106f;
+    border-top: 20px solid rgb(251, 233, 127);
+    border-bottom: 20px solid rgb(251, 233, 127);
     color: white;
     display: flex;
     justify-content: center;
