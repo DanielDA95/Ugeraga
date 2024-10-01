@@ -14,7 +14,6 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    transform: skewY(-6deg); /*Estas lineas de transform nos dan la posibilidad de darle ese corte a la imagen en la pagina*/
     transform-origin: left;
     filter: brightness(50%);
 }

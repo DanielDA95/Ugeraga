@@ -11,7 +11,9 @@
     width: 350px;
     margin: 23px 40px 20px 0px; /*Buscar la mejor forma de acomodar la imagen para que sea gustosa de ver en la pagina*/
     float: left; /*Esta propiedad nos permite poner la imagen al lado izquierdo y que el texto se acomode al contorno*/
-    border: 1px solid #cea135;/*marco de la imagen*/
+    object-fit: cover;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
 }
 .page-container > .content-wrapper p {
     letter-spacing: 1px;
