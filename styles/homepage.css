@@ -9,11 +9,16 @@
 }
 
 .hero-section > .top-heading {
-    padding: 1px 20px;
+    padding: 1px 5px;
     background-color: #17096f;  /*Adding Text Overlays On Top of the Parallax Image*/
     color: #cbcbcb;
-    width: 290px;
+    width: 200px;
     border-radius: 2px;
+    transition: 1s;
+}
+
+.hero-section > .top-heading > h1:hover {
+    border: 5px solid gold;
 }
 
 /*Features section styles */
