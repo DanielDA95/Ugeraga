@@ -55,10 +55,23 @@ con la clase de contacto y horas*/
     display: flex;
     justify-content: center;
 }
-.banner-image img {
-    width: 300px;
-    height: 100%;
+
+.banner-image {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 50px; /* Espacio hacia abajo */
 }
+
+.banner-image img {
+    width: 100px; /* Tamaño fijo para el logo */
+    height: auto; /* Mantiene la proporción correcta */
+    
+}
+
+
+
+
 .links-wrapper {
     display: flex;
     justify-content: space-between;
@@ -107,6 +120,6 @@ con la clase de contacto y horas*/
 }
 .navigation-wrapper > .right-column > .contact-icon a:hover {
     color: #cea135; 
-   }
+}
 
 
