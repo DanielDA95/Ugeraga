@@ -1,0 +1,19 @@
+/* Page container styles*/
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container > .content-wrapper {
+    width: 1000px;/* Depuracion pato de goma: ir a la pagina en el navegador e inspecionar y hablarlo en voz alta para ver cual puede ser el bug*/
+}
+.page-container > .content-wrapper > #chef {
+    width: 350px;
+    margin: 23px 40px 20px 0px; /*Buscar la mejor forma de acomodar la imagen para que sea gustosa de ver en la pagina*/
+    float: left; /*Esta propiedad nos permite poner la imagen al lado izquierdo y que el texto se acomode al contorno*/
+    border: 1px solid #cea135;/*marco de la imagen*/
+}
+.page-container > .content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 30px; /*Altura entre las lineas del texto para que se vea mejor distribuido*/
+}

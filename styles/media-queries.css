@@ -1,0 +1,83 @@
+/*Esta es la forma de hacer que la pagina se adapte al uso de dispositivos como moviles o tablets y que la pagina no 
+se corte o se vea fea sino que se vaya ajustando al tamaño que se ponga*/
+
+@media (max-width:615px) { /*Este tamaño de 615px es estandar y mas o menos es el tamño que usa un movil iphone o android*/
+    .navigation-wrapper {
+        flex-direction: column;
+        height: 100%;
+    }
+    .navigation-wrapper > .left-column {
+        order: 2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .navigation-wrapper > .center-column {
+        order: 1;
+        width: 100%;
+    }
+    .navigation-wrapper > .right-column {
+        order: 3;
+        margin-top: 15px;
+    }
+
+    .links-wrapper {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .links-wrapper > .nav-link {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 50px 10px;
+    }
+    .features-section {
+        height: 100%;
+    }
+    .features-section > .columns-wrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-structure-wrapper {
+        height: 100%;
+    }
+
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        flex-direction: column;
+    }
+    .skewed-header > .header-bg {
+        background-size: 550px;
+    }
+    .page-container {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    .content-wrapper > #chef {
+        margin: 0px 0px 25px 0px !important; /*El !important hace que el selector de css que es mas especifico y esta antes que este se anule y se ponga esta imagen cmo la necesitamos*/
+        width: 100% !important;
+    }
+    .square {
+        grid-template-columns: 1fr !important;
+    }
+    .square > .square-text-wrapper {
+        order: 1;
+    }/*Entre estos dos se realiza el cambio del orden con que aparece el texto y la imagen en la pagina para que tenga una mejor visualizacion*/
+    .square > .img-wrapper {
+        order: 2;
+    }
+    .contact-grid-wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 10px; 
+    }
+    .form input {
+        padding: 1.5rem 0rem;
+    }
+    .form textarea {
+        padding: 1.5rem 0rem;
+    }
+}

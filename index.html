@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fisrt page</title>
+
+<!--el enlace de abajo es el que pegamos desde google fonts para dar diferentes tipo de letra y dar estilo a la pagina-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/e3ead3d2a4.js" crossorigin="anonymous"></script> <!--Estos se deben añadir para que lea los iconos de fontawesome-->
+<link rel="stylesheet"  href="styles/common.css">
+<link rel="stylesheet"  href="styles/nav.css">
+<link rel="stylesheet" href="styles/homepage.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/media-queries.css">
+
+</head>
+
+    <body>
+    <!-- Se borraria este comentario pero aqui en el class de abajo vamos a tener envuelto todo el cuerpo de lo que llevamos-->
+        <div class="navigation-wrapper">
+                    
+                <div class="left-column">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i> 
+                    </div>
+                    
+                    <div class="contact-hours-wrapper">
+                        <div class="phone">
+                            555 555 5555
+                        </div>
+                        <div class="hours">
+                            10 Am - Midnight
+                        </div>
+                    </div>
+                </div>
+            <div class="links-wrapper">
+                    <div class="center-column"> 
+                            <div class="banner-image">
+                                <img src="https://jordanhudgens.github.io/digital-literacy-html-css/images/logos/decamp-fantastic-fries-logo-white.png" 
+                                alt="Logo">
+                            </div>
+                        <div class="links-wrapper">
+                            <div class="nav-link">
+                                <a href="index.html">Home</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="about.html">About</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="menu.html">Menu</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="right-column">
+                    <div id="address-wrapper">
+                    <a href="contact.html">
+                        123 Any street<br> <!--El BR se usa para darle un renglon y que la linea de abajo aparezca debajo en la pagina-->
+                        48015, Bizkaia 
+                        </a>
+                </div>
+                    <div class="contact-icon">
+                        <a href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                    </div>
+            </div>         
+        </div>
+
+        <div class="hero-section"> 
+            <div class="top-heading">
+                <h1>HTML styled fries</h1>
+            </div>
+            <div class="bottom-heading">
+                <h3>Coding fuel </h3>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="columns-wrapper">
+                <div class="column">
+                    <!--El icono va aqui-->
+                    <i class="fa-solid fa-truck-monster"></i>
+                    <p>We deliver!</p>
+                    <!--Esta etiqueta de P se añade el signo >mayor que y se escribe lorem y un numero ej 8; 
+                        esto quiere decir que nos va a dar un texto automaticamente de 8 palabras-->
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            
+
+                <div class="column">
+                    <i class="fa-solid fa-wifi"></i>
+                    <p>You can code from here!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="column">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>100+ types of fries</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div>   <!--Solamente ir a maps, dar en compartir y luego incorporar como mapa, en el mismo codigo en el width; se debe poner en 100% para que salga en toda la pagina-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.0766688912177!2d-111.92913742519734!3d33.49938234672211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0bbdbed13a73%3A0xfab78c0f014377d8!2sDiego%20Pops!5e0!3m2!1ses-419!2ses!4v1698679721408!5m2!1ses-419!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            <!--PIE DE PAGINA-->
+        <div class="footer-structure-wrapper">
+                <div class="footer-image">
+                    <img src="https://jordanhudgens.github.io/digital-literacy-html-css/images/logos/decamp-fantastic-fries-logo-white.png" 
+                                alt="Logo" height: 150px;> 
+                </div>
+            <div class="contact-hours-wrapper">
+                    <span class="phone">
+                        <p>555 555 5555</p>
+                    </span>
+
+                    <span class="hours">
+                       <p> 10 Am - Midnight </p>
+                    </span>
+            </div>
+
+            <div class="links-wrapper-footer">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+
+                    <div class="nav-link">
+                        <a href="menu.html">Menu</a>
+                    </div>
+                    
+                    <div class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
+             </div>
+
+             <div class="icons">
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="x-twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+             </div>
+             
+             <div class="copyright-wrapper">
+                &copy; 2023 DevCamp &#124; All rights reserved <!--Para encontrar los simbolos que debemos poner esta el directorio HTML entities-->
+             </div>
+     
+        </div>
+    </body>
+</html>

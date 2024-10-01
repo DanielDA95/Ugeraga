@@ -1,0 +1,24 @@
+/* Ayudantes de estilo para dar margen o espaciado entre el texto y las imagenes del trablero, y esto nos da la posiblidad de que esa margen
+solo se apique en este momento y no se haga despues en otros contenidos por lo de herencia y debe estar agregado cmo clase en HTML*/
+.spacer60 {
+    height: 60px;
+    width: 100%;
+}
+.spacer10 {
+    height: 10px;
+    width: 100%;
+}
+.anchor-link {
+    text-decoration: none;
+}/*Asi se hacen los estilos para el que el anclaje no tenga cosas raras al rededor o los bordes*/
+.anchor-link:focus {
+    outline: none;
+}
+/*.anchor-link h1::before { /*And this is a very different way of working with CSS because usually with CSS we don't render items in content directly on the page, but that's exactly what this pseudo selector allows us to do.
+    content: "I'm before - ";
+} /*We did not touch the HTML whatsoever, so what before and after do is they allow you to select an item on the page and add content to it. This can be incredibly helpful because notice if you scroll down, this has affected every one of the anchor tag H1s.*/
+.anchor-link h1::after { 
+    font-family: "Font Awesome 5 free";
+    content: " \f0c1";/*Estos son los estilos que se aplican para que aparezca el icono de enlace o cadena y la fuente de la letra usada*/
+    font-weight: 900;
+} /*And if you wanted to say, make a change that populated on hundreds of pages, this is a great way of doing it. If not, you'd have to go and find every single anchor tag in the entire system and then change it so that's really all that you need to do.*/

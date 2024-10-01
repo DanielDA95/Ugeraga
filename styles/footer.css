@@ -1,0 +1,79 @@
+.footer-structure-wrapper { /*footer para el*/
+    
+    background-color: #11122B;
+    color: #cbcbcb;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Esta linea de codigo me ayuda a que la imagen este encima de todo*/
+    height: 250px;
+    padding: 100px 150px;
+    margin-top: -4px; /*Darle este valor es para quitar la linea blanca que exista entre el mapa y el pie de pagina*/
+}
+.footer-structure-wrapper > .footer-image img {
+    height: 180px;
+    width: auto;
+    /*proceso para bajarle el brillo a la imagen*/
+    filter: brightness(50%) /*Opcion 1*/
+   /* opacity(0.5) 2 opcion*/
+
+}
+.footer-structure-wrapper > .contact-hours-wrapper span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+} /*En este medio estamos editando las horas y telefono*/
+.footer-structure-wrapper > .contact-hours-wrapper > .hours {
+    font-size: 0.8em;
+    color: #cea135;
+    text-transform: uppercase;/*este codigo nos deja poner en mayuscula el texto escrito en HTML*/
+}
+.footer-structure-wrapper > .contact-hours-wrapper {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-structure-wrapper > .links-wrapper-footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: space-between;
+}
+.footer-structure-wrapper > .links-wrapper-footer a {
+    margin: 0 15px;
+    color: #cbcbcb;
+    transition: 0.8s;
+    text-decoration: none;
+}
+.footer-structure-wrapper > .links-wrapper-footer a:hover {
+    color: gold;
+    letter-spacing: 2px;
+}
+.footer-structure-wrapper > .icons {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 42px;
+    line-height: 4;
+}
+.footer-structure-wrapper > .icons i {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+.footer-structure-wrapper > .icons i:hover {
+    color: gold;
+    letter-spacing: 2px;
+}
+.copyright-wrapper {
+    margin-bottom: 42px;
+    font-size: 0.7em;
+    color: #858585;
+}
