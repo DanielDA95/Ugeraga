@@ -11,7 +11,7 @@
 
 .hero-section > .top-heading {
     padding: 1px 20px;
-    background-color: #11122B;  /*Adding Text Overlays On Top of the Parallax Image*/
+    background-color: #09386f;  /*Adding Text Overlays On Top of the Parallax Image*/
     color: #cbcbcb;
     width: 290px;
     border-radius: 2px;
@@ -19,7 +19,7 @@
 
 .hero-section > .bottom-heading {
     background-color: #cea135;
-    color: #11122B;
+    color: #09386f;
     padding: 1px 20px;
     margin-top: 15px;
     width: 107px;
@@ -32,7 +32,7 @@
     background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
     background-color: #cea135;
     border-top: 10px solid white;
-    color: #11122b;
+    color: #09386f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@
 }
 
 .features-section > .columns-wrapper > .column:hover {
-    border-bottom: 5px solid #11122B;
+    border-bottom: 5px solid #09386f;
 }
 
 .features-section > .columns-wrapper > .column :nth-child(1) {
