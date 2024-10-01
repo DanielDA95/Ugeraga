@@ -9,7 +9,8 @@
 .squares-wrapper > .squares > .square {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: -4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .square > .img-wrapper img {
     width: 100%;
