@@ -65,7 +65,7 @@ con la clase de contacto y horas*/
     align-items: center;
 }
 .links-wrapper > .nav-link {
-    width: 70px;
+    width: 90px;
     text-align: center;
 }
 .links-wrapper > .nav-link a {
@@ -108,3 +108,5 @@ con la clase de contacto y horas*/
 .navigation-wrapper > .right-column > .contact-icon a:hover {
     color: #cea135; 
    }
+
+
