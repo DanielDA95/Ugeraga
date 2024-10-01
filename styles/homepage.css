@@ -11,7 +11,7 @@
 
 .hero-section > .top-heading {
     padding: 1px 20px;
-    background-color: #09386f;  /*Adding Text Overlays On Top of the Parallax Image*/
+    background-color: #17096f;  /*Adding Text Overlays On Top of the Parallax Image*/
     color: #cbcbcb;
     width: 290px;
     border-radius: 2px;
@@ -19,10 +19,11 @@
 
 /*Features section styles */
 .features-section {
-    height: 400px;
+    height: 600px;
     background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg);
     background-color: #cea135;
-    border-top: 10px solid white;
+    border-top: 4px solid #09106f;
+    border-bottom: 4px solid #09106f;
     color: white;
     display: flex;
     justify-content: center;
