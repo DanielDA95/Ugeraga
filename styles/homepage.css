@@ -17,27 +17,20 @@
     border-radius: 2px;
 }
 
-.hero-section > .bottom-heading {
-    background-color: #cea135;
-    color: #09386f;
-    padding: 1px 20px;
-    margin-top: 15px;
-    width: 107px;
-    border-radius: 2px; /* para poner los bordes redondeados y no un cuadro o rectangulo*/
-}
-
 /*Features section styles */
 .features-section {
     height: 400px;
-    background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
+    background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg);
     background-color: #cea135;
     border-top: 10px solid white;
-    color: #09386f;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Barlow Condensed' sans-serif;
     box-shadow: inset 0px -26px 79px -8px rgb(0, 0, 0, 0.58); /*Codigo para dar sombra de abajo a la imagen*/
+    background-size:cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
 }
 
 .features-section > .columns-wrapper {
@@ -57,7 +50,7 @@
 }
 
 .features-section > .columns-wrapper > .column:hover {
-    border-bottom: 5px solid #09386f;
+    border-bottom: 5px solid gold;
 }
 
 .features-section > .columns-wrapper > .column :nth-child(1) {
