@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/e3ead3d2a4.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
     <link rel="stylesheet"  href="styles/common.css">
     <link rel="stylesheet"  href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -49,32 +50,63 @@
                     <div class="nav-link">
                         <a href="contacto.html">Contacto</a>
                     </div>
-                </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- Menú de Categorías -->
+    <div class="links-wrapper2">
+        <div class="dropdown">
+            <button class="dropbtn">NUESTRAS CATEGORÍAS</button>
+            <div class="dropdown-content">
+                <a href="#">REGIONAL PREFERENTE</a>
+                <a href="#">2DA REGIONAL GRUPO 1</a>
+                <a href="#">REGIONAL FEMENINO 1RA</a>
+                <a href="#">JUVENIL PREFERENTE</a>
+                <a href="#">3ERA DIVISION REGIONAL</a>
+                <a href="#">1RA DIVISION JUVENIL</a>
+                <a href="#">PREFERENTE CADETE</a>
+                <a href="#">2DA CADETE</a>
+                <a href="#">2DA CADETE FEMENINO</a>
+                <a href="#">LIGA RECREATIVA</a>
             </div>
         </div>
     </div>
 
-   
-    <div class="squares-wrapper"> 
+    <!-- Carrusel de imágenes del equipo -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="images/people/equipo1.jpg" alt="Equipo S.D Ugeraga 1">
+            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 2">
+            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 3">
+            <img src="images/people/equipo3.jpg" alt="Equipo S.D Ugeraga 4">
+            <img src="images/people/equipo4.jpg" alt="Equipo S.D Ugeraga 5">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    
+    <!-- <div class="squares-wrapper"> 
         <div class="squares">
             <div class="square">
-                <!--Buscar unsplash para agregar fotos gratis-->
+                
                 <div class="img-wrapper">
                     <img src="images/people/equipo1.jpg" alt="Fries">
                 </div>
 
                 <div class="square-text-wrapper">
                     <a href="#spicy" name="spicy" class="anchor-link">
-                        <h1>Ugeraga C</h1> <!--Poner asi como aqui el # en la palabra nos da el anclado de pagina o "anchor"-->
+                        <h1>Ugeraga C</h1> 
                     </a>    
-                    <!--EN html se llama lista desordenada, a tipo de texto ennumerado con viñeta de punto o numero asi:-->
+                    
                     <ul>
                         <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                         <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
                         <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
                         <li>Necessitatibus eos facere inventore quod non dolores sunt.</li>
                     </ul>
-                <!--Como recordatorio podemos usar li*4>lorem8 para que nos de un listado de 4 puntos con las pabras al azar-->
+                
                 </div>
             </div>
 
@@ -98,7 +130,7 @@
             </div>
 
             <div class="square">
-                <!--Buscar unsplash para agregar fotos gratis-->
+                
                 <div class="img-wrapper">
                     <img src="images/people/equipo4.jpg" alt="Fries">
                 </div>
@@ -108,7 +140,7 @@
                         <h1>Juvenil A</h1> 
                     </a>
 
-                    <ol> <!--Esta es la forma de crear la lista con numeros OL = ordenade list-->
+                    <ol> 
                         <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                         <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
                         <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
@@ -123,7 +155,7 @@
                         <h1>Kadete C</h1> 
                     </a>
 
-                    <ol> <!--Esta es la forma de crear la lista con numeros OL = ordenade list-->
+                    <ol> 
                         <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                         <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
                         <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
@@ -137,7 +169,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <div class="footer-structure-wrapper">
             <div class="footer-image">

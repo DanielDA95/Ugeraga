@@ -4,6 +4,12 @@
     height: 200px;
     overflow: hidden;
 }
+.skewed-header2 {
+    position: relative;
+    height: flex;
+    overflow: hidden;
+}
+
 .skewed-header > .header-bg {
     position: absolute;
     top: 0;
