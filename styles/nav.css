@@ -1,38 +1,26 @@
-/* estilos comunes de la navegacion */
 .navigation-wrapper {
     height: 190px;
     background-color: #09386f;
     color: #cbcbcb;
-    /* esto es un contenedor de flexbox----- Flexbox container */
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    /* paddign relleno en el flexbox*/
     padding: 60px 100px;
 }
-/*Estilos de la columna izquierda*/
-/*Darle un flexbox a la div del numero de telefono para modificar solo esa parte como queramos*/
 .navigation-wrapper > .left-column {
     display: flex;
     align-items: center;
 
 }
-/*Este codigo permite modificar los iconos que tengan el tag (i)*/
 .navigation-wrapper > .left-column > .icon {
     font-size: 2em;
-
 }
-/*En estos estilos que le estamos dando a las clases debemos ser muy especificos por eso invocamos a nav-left-icon
-para estos sean aplicados de manera correcta y en el sitio que lo necesitamos ya que si no los dejamos especificados
-mas adelante nos generaran problemas si aplicamos estilos en otras hojas y anula estos cambios hechos.*/
 .navigation-wrapper > .left-column > .icon i {
     margin-right: 15px;
 }
-/*En el Grid el uso dl > entre class es decirle a CSS que se encuentre uno con el otro en este caso la columna izqui
-con la clase de contacto y horas*/
 .navigation-wrapper > .left-column > .contact-hours-wrapper {
-    display: grid; /*el grid es como una cuadricula con el que se va a organizar el contenido*/
-    grid-template-columns: 1fr; /*El fr= unidad fraccionaria.Y para agregar mas columnas se pone 1fr 1fr 1fr por cada 1*/
+    display: grid; 
+    grid-template-columns: 1fr; 
     grid-gap: 10px;
 }
 .navigation-wrapper > .left-column > .contact-hours-wrapper > .hours {
@@ -44,7 +32,6 @@ con la clase de contacto y horas*/
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
 }
-/*Aqui estan los estilos de la columna central*/
 .navigation-wrapper > .center-column {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,38 +45,71 @@ con la clase de contacto y horas*/
 
 .banner-image {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    margin-bottom: 50px; /* Espacio hacia abajo */
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 50px; 
 }
 
 .banner-image img {
-    width: 100px; /* Tamaño fijo para el logo */
-    height: auto; /* Mantiene la proporción correcta */
+    width: 100px;
+    height: auto;
     
 }
-
-
-
 
 .links-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px; /* Añadido: Espacio entre los enlaces */
 }
+
 .links-wrapper > .nav-link {
-    width: 90px;
+    width: auto;
     text-align: center;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px; /* Bordes redondeados para el contenedor de cada enlace */
 }
+
 .links-wrapper > .nav-link a {
-    font-family: Barlow 'Barlow Condensed' sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     color: #cbcbcb;
     text-decoration: none;
-    transition: 0.5s;
+    transition: color 0.3s ease, letter-spacing 0.3s ease, border-radius 0.3s ease, transform 0.3s ease; /* Añadido transform a la transición */
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 15px; /* Bordes redondeados para el enlace */
+    position: relative;
+    z-index: 1;
 }
+
+.links-wrapper > .nav-link a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    z-index: -1;
+    border-radius: 15px; /* Bordes redondeados para la animación de fondo */
+    transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Suaviza la expansión y el redondeo */
+}
+
+.links-wrapper > .nav-link a:hover::before {
+    width: 100%;
+}
+
 .links-wrapper > .nav-link a:hover {
-    color: gold;
+    color: #09386f;
     letter-spacing: 2px;
+    transform: scale(1.1); /* Aumenta el tamaño del enlace un 10% */
+}
+
+.links-wrapper > .nav-link a:active {
+    transform: scale(0.95);
+    border-color: gold;
+    border-radius: 15px; /* Mantiene los bordes redondeados al hacer clic */
 }
 
 .navigation-wrapper > .right-column {
