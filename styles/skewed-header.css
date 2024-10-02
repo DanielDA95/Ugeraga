@@ -1,7 +1,7 @@
 /*Skwed header o encabezado sesgado*/
 .skewed-header {
     position: relative;
-    height: 400px;
+    height: 200px;
     overflow: hidden;
 }
 .skewed-header > .header-bg {
@@ -13,7 +13,7 @@
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     transform-origin: left;
     filter: brightness(50%);
 }
@@ -35,10 +35,8 @@
 .skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
     background-color: #cea135;
     color: #09386f;
-    border-bottom-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    width: 350px; /*Con este editamos fondo del nombre de la pagina about us*/
-    height: auto;
     padding: 10px;
+    border-radius: 5px; /* Cambiado para un mejor diseño */
     text-align: center;
+    display: inline-block; /* Hace que el contenedor del título se ajuste al tamaño del texto */
 }
