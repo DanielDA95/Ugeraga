@@ -55,7 +55,6 @@
     height: auto;
     
 }
-
 .links-wrapper {
     display: flex;
     justify-content: space-between;
@@ -111,6 +110,70 @@
     border-color: gold;
     border-radius: 15px; /* Mantiene los bordes redondeados al hacer clic */
 }
+
+/*<!-- Menú de Categorías --> */
+
+/* Contenedor del menú centrado */
+.links-wrapper2 {
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+    margin: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Botón del menú */
+.dropbtn {
+    background-color: #005b96;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1001;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Asegura que el contenido esté centrado */
+}
+
+/* Contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    border-radius: 5px;
+    text-align: left; /* Opcional: para alinear el texto a la izquierda */
+}
+
+/* Cada enlace dentro del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en cada enlace */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú desplegable al hacer hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .navigation-wrapper > .right-column {
     display: flex;
