@@ -58,19 +58,40 @@
         <div class="dropdown">
             <button class="dropbtn">NUESTRAS CATEGORÍAS</button>
             <div class="dropdown-content">
-                <a href="#">REGIONAL PREFERENTE</a>
-                <a href="#">2DA REGIONAL GRUPO 1</a>
-                <a href="#">REGIONAL FEMENINO 1RA</a>
-                <a href="#">JUVENIL PREFERENTE</a>
-                <a href="#">3ERA DIVISION REGIONAL</a>
-                <a href="#">1RA DIVISION JUVENIL</a>
-                <a href="#">PREFERENTE CADETE</a>
-                <a href="#">2DA CADETE</a>
-                <a href="#">2DA CADETE FEMENINO</a>
-                <a href="#">LIGA RECREATIVA</a>
+                <a href="#" onclick="showCategory('regional-preferente')">REGIONAL PREFERENTE</a>
+                <a href="#" onclick="showCategory('segunda-regional')">2DA REGIONAL GRUPO 1</a>
+                <a href="#" onclick="showCategory('regional-femenino')">REGIONAL FEMENINO 1RA</a>
+                <a href="#" onclick="showCategory('juvenil-preferente')">JUVENIL PREFERENTE</a>
+                <a href="#" onclick="showCategory('tercera-division')">3ERA DIVISION REGIONAL</a>
+                <a href="#" onclick="showCategory('juvenil-primera')">1RA DIVISION JUVENIL</a>
+                <a href="#" onclick="showCategory('preferente-cadete')">PREFERENTE CADETE</a>
+                <a href="#" onclick="showCategory('segunda-cadete')">2DA CADETE</a>
+                <a href="#" onclick="showCategory('segunda-cadete-femenino')">2DA CADETE FEMENINO</a>
+                <a href="#" onclick="showCategory('liga-recreativa')">LIGA RECREATIVA</a>
             </div>
         </div>
     </div>
+    
+    <!-- información de las categorías -->
+    <div id="content-container">
+        <div id="regional-preferente" class="category-content" style="display:none;">
+            <h2>Regional Preferente</h2>
+            <img src="ruta-imagen.jpg" alt="Equipo Regional Preferente">
+            <p>Información detallada sobre el equipo Regional Preferente.</p>
+        </div>
+        <div id="segunda-regional" class="category-content" style="display:none;">
+            <h2>2da Regional Grupo 1</h2>
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Regional Grupo 1">
+            <p>Información detallada sobre el equipo de 2da Regional Grupo 1.</p>
+        </div>
+        <div id="regional-femenino" class="category-content" style="display:none;">
+            <h2>Regional Femenino 1ra</h2>
+            <img src="ruta-imagen.jpg" alt="Equipo Regional Femenino 1ra">
+            <p>Información detallada sobre el equipo Regional Femenino 1ra.</p>
+        </div>
+        <!-- Para añadir mas categorías -->
+    </div>
+    
 
     <!-- Carrusel de imágenes del equipo -->
     <div class="carousel-container">
@@ -85,90 +106,8 @@
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
 
-    
-    <!-- <div class="squares-wrapper"> 
-        <div class="squares">
-            <div class="square">
-                
-                <div class="img-wrapper">
-                    <img src="images/people/equipo1.jpg" alt="Fries">
-                </div>
+     <!-- Descripcion equipos -->
 
-                <div class="square-text-wrapper">
-                    <a href="#spicy" name="spicy" class="anchor-link">
-                        <h1>Ugeraga C</h1> 
-                    </a>    
-                    
-                    <ul>
-                        <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
-                        <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
-                        <li>Necessitatibus eos facere inventore quod non dolores sunt.</li>
-                    </ul>
-                
-                </div>
-            </div>
-
-            <div class="square">
-                <div class="square-text-wrapper">
-                    <a href="#medium" name="medium" class="anchor-link">
-                        <h1>Kadete Fem</h1> 
-                    </a>
-
-                    <ul>
-                        <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
-                        <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
-                        <li>Necessitatibus eos facere inventore quod non dolores sunt.</li>
-                    </ul>
-
-                </div>
-                <div class="img-wrapper">
-                    <img src="images/people/equipo2.jpg" alt="Fries">
-                </div>
-            </div>
-
-            <div class="square">
-                
-                <div class="img-wrapper">
-                    <img src="images/people/equipo4.jpg" alt="Fries">
-                </div>
-
-                <div class="square-text-wrapper">
-                    <a href="#mild" name="mild" class="anchor-link">
-                        <h1>Juvenil A</h1> 
-                    </a>
-
-                    <ol> 
-                        <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
-                        <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
-                        <li>Necessitatibus eos facere inventore quod non dolores sunt.</li>
-                    </ol>
-                   
-                </div>
-            </div>
-            <div class="square">
-                <div class="square-text-wrapper">
-                    <a href="#noflavor" name="noflavor" class="anchor-link">
-                        <h1>Kadete C</h1> 
-                    </a>
-
-                    <ol> 
-                        <li class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Itaque voluptates aut ad ullam nostrum neque perspiciatis?</li>
-                        <li>Voluptatum, nemo odit alias illo molestias laborum totam.</li>
-                        <li>Necessitatibus eos facere inventore quod non dolores sunt.</li>
-                    </ol>
-
-                </div>
-                <div class="img-wrapper">
-                    <img src="images/people/equipo3.jpg" alt="Fries">
-                </div>
-            </div>
-
-        </div>
-    </div> -->
 
     <div class="footer-structure-wrapper">
             <div class="footer-image">

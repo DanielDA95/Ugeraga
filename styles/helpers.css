@@ -22,3 +22,66 @@ solo se apique en este momento y no se haga despues en otros contenidos por lo d
     content: " \f0c1";/*Estos son los estilos que se aplican para que aparezca el icono de enlace o cadena y la fuente de la letra usada*/
     font-weight: 900;
 } /*And if you wanted to say, make a change that populated on hundreds of pages, this is a great way of doing it. If not, you'd have to go and find every single anchor tag in the entire system and then change it so that's really all that you need to do.*/
+
+
+
+
+/* Estilos para el carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 20%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide img {
+    min-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Botones de navegación del carrusel */
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    user-select: none;
+    left: 10px;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    user-select: none;
+    right: 10px;
+}
+
+.prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

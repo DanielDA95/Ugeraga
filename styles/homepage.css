@@ -1,3 +1,46 @@
+.subscribe-button {
+    font-size: 20px; /* Tamaño grande */
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out; /* Animación de entrada */
+    font-family: 'Arial', sans-serif; /* Tipografía */
+    color: #333; /* Color oscuro */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos del botón */
+.subscribe-button {
+    display: inline-block;
+    background-color: #09386f; /* Rojo estilo YouTube */
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Quitar subrayado */
+    margin-top: 20px; /* Separación del título */
+}
+
+.subscribe-button:hover {
+    background-color: #E6D847; /* Color más oscuro al pasar el mouse */
+    color: black;
+}
+
+
+
 /*Styles for hero section*/
 .hero-section {
     background-image: url(../images/Backgrounds/ugeragateam.jpg);
@@ -6,20 +49,6 @@
     background-position: center;
     background-repeat: no-repeat; /* Este evita que la imagen se duplique o se vea varias veces si se aleja el zoom de la pagina */
     background-size: cover; /* Se usa mucho ya que hace ver la imagen centrada y cortada para que se vea el centro, lo más importante */
-}
-
-.hero-section > .top-heading {
-    padding: 1px 5px;
-    background-color: #17096f; /* Adding Text Overlays On Top of the Parallax Image */
-    color: #cbcbcb;
-    width: 200px;
-    border-radius: 2px;
-    transition: 1s;
-    font-family: 'Poppins', sans-serif; /* Cambiado a Poppins */
-}
-
-.hero-section > .top-heading > h1:hover {
-    border: 5px solid gold;
 }
 
 /*Features section styles */
@@ -40,7 +69,8 @@
 }
 
 .news-title {
-    background-color: rgba(0, 0, 255, 0.5); /* Color de fondo azul con transparencia */
+    background-color: #09386f; /* Color de fondo azul con transparencia */
+    color: white;
     border-radius: 10px; /* Bordes redondeados */
     padding: 5px 10px; /* Espacio interno reducido */
     text-align: center; /* Centrar texto */
@@ -54,9 +84,10 @@
 }
 
 .news-title:hover {
-    background-color: gold; /* Color dorado al pasar el ratón */
+    background-color: #E6D847; /* Color dorado al pasar el ratón */
     letter-spacing: 2px; /* Espaciado de letras al pasar el ratón */
     transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+    color: black;
 }
 
 .news-wrapper {
