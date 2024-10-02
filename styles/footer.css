@@ -1,5 +1,4 @@
-.footer-structure-wrapper { /*footer para el*/
-    
+.footer-structure-wrapper {
     background-color: #09386f;
     color: #cbcbcb;
     font-family: 'Barlow Condensed', sans-serif;
@@ -9,15 +8,13 @@
     flex-direction: column; /*Esta linea de codigo me ayuda a que la imagen este encima de todo*/
     height: 250px;
     padding: 100px 150px;
-    margin-top: -4px; /*Darle este valor es para quitar la linea blanca que exista entre el mapa y el pie de pagina*/
+    margin-top: -4px; /*Darle este valor para quitar la linea blanca que exista entre el mapa y el pie de pagina*/
 }
 .footer-structure-wrapper > .footer-image img {
     height: 180px;
     width: auto;
-    /*proceso para bajarle el brillo a la imagen*/
     filter: brightness(50%) /*Opcion 1*/
    /* opacity(0.5) 2 opcion*/
-
 }
 .footer-structure-wrapper > .contact-hours-wrapper span {
     margin-left: 10px;
@@ -40,12 +37,13 @@
 .footer-structure-wrapper > .links-wrapper-footer {
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 400px;
+    width: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    justify-items: space-between;
+    justify-items: center; 
 }
+
 .footer-structure-wrapper > .links-wrapper-footer a {
     margin: 0 15px;
     color: #cbcbcb;
