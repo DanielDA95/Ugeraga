@@ -1,31 +1,31 @@
 .footer-structure-wrapper {
     background-color: #09386f;
     color: #cbcbcb;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif; /* Cambio de Barlow Condensed a Lato */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /*Esta linea de codigo me ayuda a que la imagen este encima de todo*/
+    flex-direction: column; /* Esta línea de código me ayuda a que la imagen esté encima de todo */
     height: 250px;
     padding: 100px 150px;
-    margin-top: -4px; /*Darle este valor para quitar la linea blanca que exista entre el mapa y el pie de pagina*/
+    margin-top: -4px; /* Darle este valor para quitar la línea blanca que exista entre el mapa y el pie de página */
 }
 .footer-structure-wrapper > .footer-image img {
     height: 180px;
     width: auto;
-    filter: brightness(50%) /*Opcion 1*/
-   /* opacity(0.5) 2 opcion*/
+    filter: brightness(50%) /* Opción 1 */
+    /* opacity(0.5) 2 opción */
 }
 .footer-structure-wrapper > .contact-hours-wrapper span {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1em;
     letter-spacing: 2px;
-} /*En este medio estamos editando las horas y telefono*/
+} /* En este medio estamos editando las horas y teléfono */
 .footer-structure-wrapper > .contact-hours-wrapper > .hours {
     font-size: 0.8em;
     color: #cea135;
-    text-transform: uppercase;/*este codigo nos deja poner en mayuscula el texto escrito en HTML*/
+    text-transform: uppercase; /* Este código nos deja poner en mayúscula el texto escrito en HTML */
 }
 .footer-structure-wrapper > .contact-hours-wrapper {
     display: grid;

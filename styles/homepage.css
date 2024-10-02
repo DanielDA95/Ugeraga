@@ -4,17 +4,18 @@
     padding: 100px;
     height: 300px;
     background-position: center;
-    background-repeat: no-repeat;/*Este evita que la imagen se duplique o se vea varias veces si se aleja el zoom de la pagina*/
-    background-size: cover;/*Se uaa mucho ya que hace ver la imagen centrada y cortada para que se vea el centro, lo mas importante*/
+    background-repeat: no-repeat; /* Este evita que la imagen se duplique o se vea varias veces si se aleja el zoom de la pagina */
+    background-size: cover; /* Se usa mucho ya que hace ver la imagen centrada y cortada para que se vea el centro, lo más importante */
 }
 
 .hero-section > .top-heading {
     padding: 1px 5px;
-    background-color: #17096f;  /*Adding Text Overlays On Top of the Parallax Image*/
+    background-color: #17096f; /* Adding Text Overlays On Top of the Parallax Image */
     color: #cbcbcb;
     width: 200px;
     border-radius: 2px;
     transition: 1s;
+    font-family: 'Poppins', sans-serif; /* Cambiado a Poppins */
 }
 
 .hero-section > .top-heading > h1:hover {
@@ -32,9 +33,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Barlow Condensed' sans-serif;
-    box-shadow: inset 0px -26px 79px -8px rgb(0, 0, 0, 0.58); /*Codigo para dar sombra de abajo a la imagen*/
-    background-size:cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    font-family: 'Barlow', sans-serif; /* Cambiado a Barlow */
+    box-shadow: inset 0px -26px 79px -8px rgb(0, 0, 0, 0.58); /* Código para dar sombra de abajo a la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     background-position: center; /* Centra la imagen */
 }
 
@@ -44,7 +45,6 @@
     justify-content: space-between;
 }
 
-
 .features-section > .columns-wrapper > .column {
     width: 100%; /* La imagen ocupará todo el ancho del contenedor */
     height: 200px; /* Altura fija */
@@ -53,12 +53,11 @@
 }
 
 .column img {
-    width:80%; /* La imagen ocupará todo el ancho del contenedor */
+    width: 80%; /* La imagen ocupará todo el ancho del contenedor */
     height: 200px; /* Altura fija */
     object-fit: cover; /* Mantiene el aspecto de la imagen y la ajusta */
     border-radius: 10px; /* (Opcional) Bordes redondeados */
 }
-
 
 .features-section > .columns-wrapper > .column :nth-child(1) {
     font-size: 3em;

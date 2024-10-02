@@ -1,9 +1,9 @@
-/* Estilos comunes o common styles*/
+/* Estilos comunes o common styles */
 body {
     margin: 0px;
-    font-family: 'Roboto', sans-serif; /*fuente principal para todo el proyecto*/
+    font-family: 'Lato', sans-serif; /*fuente principal para todo el proyecto*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Gruppo', serif;
 }

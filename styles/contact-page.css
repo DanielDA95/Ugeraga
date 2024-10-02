@@ -12,8 +12,8 @@
 
 .company-metadata-sidebar-wrapper > .company-details-wrapper {
     display: flex;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 750;
+    font-family: 'Lato', sans-serif; /* Cambio de Barlow Condensed a Lato */
+    font-weight: 700; /* Peso adecuado para la fuente Lato */
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
