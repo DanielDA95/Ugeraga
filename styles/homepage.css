@@ -24,53 +24,51 @@
 
 /*Features section styles */
 .features-section {
-    height: 600px;
-    background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg);
-    background-color: #cea135;
-    border-top: 20px solid rgb(251, 233, 127);
-    border-bottom: 20px solid rgb(251, 233, 127);
-    color: white;
+    height: auto; /* Ajustamos la altura para que se adapte al contenido */
+    color: black; /* Color del texto */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Barlow', sans-serif; /* Cambiado a Barlow */
-    box-shadow: inset 0px -26px 79px -8px rgb(0, 0, 0, 0.58); /* Código para dar sombra de abajo a la imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    flex-direction: column; /* Cambiamos a columna para apilar elementos */
+    align-items: center; /* Centramos el contenido */
+    font-family: 'Barlow', sans-serif;
+    padding: 20px; /* Agregamos un poco de padding */
+    position: relative; /* Para el uso de la imagen de fondo */
+    overflow: hidden; /* Para evitar que se salga el contenido */
+    background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
+    border: 5px solid gold;
 }
 
-.features-section > .columns-wrapper {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
+.news-title {
+    background-color: rgba(0, 0, 255, 0.5); /* Color de fondo azul con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espacio interno reducido */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.3s, letter-spacing 0.3s, transform 0.3s; /* Transiciones suaves */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
-.features-section > .columns-wrapper > .column {
-    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-    height: 200px; /* Altura fija */
-    object-fit: cover; /* Mantiene el aspecto de la imagen y la ajusta */
-    border-radius: 10px; /* (Opcional) Bordes redondeados */
+.news-title h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin: 0; /* Sin margen */
 }
 
-.column img {
-    width: 80%; /* La imagen ocupará todo el ancho del contenedor */
-    height: 200px; /* Altura fija */
-    object-fit: cover; /* Mantiene el aspecto de la imagen y la ajusta */
-    border-radius: 10px; /* (Opcional) Bordes redondeados */
+.news-title:hover {
+    background-color: gold; /* Color dorado al pasar el ratón */
+    letter-spacing: 2px; /* Espaciado de letras al pasar el ratón */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
 }
 
-.features-section > .columns-wrapper > .column :nth-child(1) {
-    font-size: 3em;
+.news-wrapper {
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Máximo ancho para la sección de noticias */
+    margin-top: 20px; /* Margen superior */
 }
-.features-section > .columns-wrapper > .column :nth-child(2) {
-    font-size: 1.5em;
-    font-weight: 900;
-    height: 50px;
-    transition: 1s;
-}
-.features-section > .columns-wrapper > .column :nth-child(2):hover {
-    letter-spacing: 1px;
-}
-.features-section > .columns-wrapper > .column :nth-child(3) {
-    letter-spacing: 2px;
+
+.news-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    margin-bottom: 10px; /* Espacio entre noticias */
+    text-align: center; /* Centrar texto de las noticias */
 }
