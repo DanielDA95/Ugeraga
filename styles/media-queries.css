@@ -1,7 +1,4 @@
-/*Esta es la forma de hacer que la pagina se adapte al uso de dispositivos como moviles o tablets y que la pagina no 
-se corte o se vea fea sino que se vaya ajustando al tamaño que se ponga*/
-
-@media (max-width:615px) { /*Este tamaño de 615px es estandar y mas o menos es el tamño que usa un movil iphone o android*/
+@media (max-width:615px) { 
     .navigation-wrapper {
         flex-direction: column;
         height: 100%;
@@ -57,15 +54,14 @@ se corte o se vea fea sino que se vaya ajustando al tamaño que se ponga*/
         padding-right: 21px;
     }
     .content-wrapper > #chef {
-        margin: 0px 0px 25px 0px !important; /*El !important hace que el selector de css que es mas especifico y esta antes que este se anule y se ponga esta imagen cmo la necesitamos*/
-        width: 100% !important;
+        margin: 0px 0px 25px 0px !important; 
     }
     .square {
         grid-template-columns: 1fr !important;
     }
     .square > .square-text-wrapper {
         order: 1;
-    }/*Entre estos dos se realiza el cambio del orden con que aparece el texto y la imagen en la pagina para que tenga una mejor visualizacion*/
+    }
     .square > .img-wrapper {
         order: 2;
     }

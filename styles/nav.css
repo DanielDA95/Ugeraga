@@ -172,7 +172,7 @@
     transition: 0.5s;
 }
 .navigation-wrapper > .right-column > #address-wrapper a:hover {
-    color: #cea135
+    color: #E6D847
 }
 .navigation-wrapper > .right-column > .contact-icon {
         margin-left: 15px;
@@ -183,7 +183,7 @@
  transition: 0.5s;
 }
 .navigation-wrapper > .right-column > .contact-icon a:hover {
-    color: #cea135; 
+    color: #E6D847; 
 }
 
 
