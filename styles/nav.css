@@ -10,7 +10,6 @@
 .navigation-wrapper > .left-column {
     display: flex;
     align-items: center;
-
 }
 .navigation-wrapper > .left-column > .icon {
     font-size: 2em;
