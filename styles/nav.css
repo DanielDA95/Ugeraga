@@ -90,7 +90,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: gold;
+    background-color: #E6D847;
     z-index: -1;
     border-radius: 15px; /* Bordes redondeados para la animación de fondo */
     transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Suaviza la expansión y el redondeo */
@@ -108,7 +108,7 @@
 
 .links-wrapper > .nav-link a:active {
     transform: scale(0.95);
-    border-color: gold;
+    border-color: #E6D847;
     border-radius: 15px; /* Mantiene los bordes redondeados al hacer clic */
 }
 
