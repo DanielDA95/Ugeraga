@@ -24,7 +24,7 @@
 } /* En este medio estamos editando las horas y teléfono */
 .footer-structure-wrapper > .contact-hours-wrapper > .hours {
     font-size: 0.8em;
-    color: #cea135;
+    color: #E6D847;
     text-transform: uppercase; /* Este código nos deja poner en mayúscula el texto escrito en HTML */
 }
 .footer-structure-wrapper > .contact-hours-wrapper {
@@ -51,7 +51,7 @@
     text-decoration: none;
 }
 .footer-structure-wrapper > .links-wrapper-footer a:hover {
-    color: gold;
+    color: #E6D847;
     letter-spacing: 2px;
 }
 .footer-structure-wrapper > .icons {
@@ -67,7 +67,7 @@
     transition: 0.5s;
 }
 .footer-structure-wrapper > .icons i:hover {
-    color: gold;
+    color: #E6D847;
     letter-spacing: 2px;
 }
 .copyright-wrapper {

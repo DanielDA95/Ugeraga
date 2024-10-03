@@ -19,7 +19,7 @@
 .form input:focus {
     outline: none; /* En este código estamos haciendo que las etiquetas del formulario tengan ese contorno dorado cuando se selecciona para rellenar */
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #cea135;
+    border-bottom: 3px solid #E6D847;
 }   
 
 .form textarea {
@@ -37,7 +37,7 @@
 .form textarea:focus {
     outline: none; 
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
-    border: 3px solid #cea135;
+    border: 3px solid #E6D847;
 }
 
 /* Cómo actualizar el valor del marcador de posición. */
@@ -57,7 +57,7 @@
     margin-top: 0.8rem;
     display: block;
     transition: all 0.3s;
-    color: #cea135;
+    color: #E6D847;
     /* Siempre tenemos que trabajar y tener en cuenta la visibility y la opacity */
     visibility: hidden;
     opacity: 0;
