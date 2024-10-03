@@ -1,9 +1,19 @@
+.subscribe {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Espaciado superior, puedes ajustarlo */
+    padding-top: 20px;
+    padding-bottom: 40px;   
+}
+
 .subscribe-button {
     font-size: 20px; /* Tamaño grande */
     font-weight: bold;
     animation: fadeIn 2s ease-in-out; /* Animación de entrada */
     font-family: 'Arial', sans-serif; /* Tipografía */
     color: #333; /* Color oscuro */
+    border-width: 400px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);   
 }
 
 @keyframes fadeIn {
@@ -19,10 +29,13 @@
 
 /* Estilos del botón */
 .subscribe-button {
-    display: inline-block;
+    display: center;
     background-color: #09386f; /* Rojo estilo YouTube */
     color: white;
-    padding: 12px 24px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -32,6 +45,8 @@
     transition: background-color 0.3s ease;
     text-decoration: none; /* Quitar subrayado */
     margin-top: 20px; /* Separación del título */
+    border-width: 4px; /* Ajusta este valor para cambiar el grosor del borde */
+   
 }
 
 .subscribe-button:hover {
@@ -65,7 +80,10 @@
     background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg); /* Asegúrate de que la ruta de la imagen sea correcta */
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
-    border: 5px solid #E6D847;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .news-title {
