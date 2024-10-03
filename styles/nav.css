@@ -23,13 +23,13 @@
     grid-template-columns: 1fr; 
     grid-gap: 10px;
 }
-.navigation-wrapper > .left-column > .contact-hours-wrapper > .hours {
-    font-family: 'Barlow Condensed', sans-serif;
+.navigation-wrapper > .left-column > .contact-hours-wrapper > .hours p {
+    font-family: 'Lato', sans-serif;
     color: #858585;
-    font-size: 0.8em;
+    font-size: 1.8em;
 }
 .links-wrapper > .nav-link a {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: white;
 }
 .navigation-wrapper > .center-column {
@@ -71,7 +71,7 @@
 }
 
 .links-wrapper > .nav-link a {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #cbcbcb;
     text-decoration: none;
     transition: color 0.3s ease, letter-spacing 0.3s ease, border-radius 0.3s ease, transform 0.3s ease; /* Añadido transform a la transición */
@@ -180,7 +180,7 @@
     align-items: center;
 }
 .navigation-wrapper > .right-column > #address-wrapper {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     align-items: right;
 }
 
