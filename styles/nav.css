@@ -10,29 +10,30 @@
     position: relative; /* Permitir centrar el contenido más precisamente */
 }
 
-.navigation-wrapper > .left-column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1; /* Añadido para que esta columna no desplace el contenido del centro */
+.left-column {
+    flex: 0 1 auto; /* Evita que la columna crezca más allá del contenido */
+    max-width: 25%; /* Limita el ancho máximo de la columna izquierda */
+    white-space: nowrap; /* Evita que el texto en la izquierda se rompa en varias líneas */
+    overflow: hidden; /* Oculta el desbordamiento si el nombre es demasiado largo */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
+    justify-content: flex-start;
 }
 
 .links-wrapper > .nav-link a {
     font-family: 'Lato', sans-serif;
     color: white;
 }
-.navigation-wrapper > .center-column {
+.center-column {
+    flex: 1 1 auto; /* Permite que la columna central use el espacio restante disponible */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 2; /* Permitir que la columna del centro tenga más espacio y esté centrada */
+    justify-content: center; /* Asegura que el contenido dentro de la columna central esté centrado */
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Centra horizontalmente el contenido */
 }
-
-.navigation-wrapper > .right-column {
-    display: flex;
-    align-items: center;
+.right-column {
+    flex: 0 1 auto; /* Evita que la columna derecha crezca más allá de su contenido */
+    max-width: 25%; /* Limita el ancho máximo de la columna derecha si es necesario */
     justify-content: flex-end;
-    flex-grow: 1; /* Mantener el equilibrio con la columna izquierda */
 }
 .navigation-wrapper > .right-column > #address-wrapper {
     font-family: 'Lato', sans-serif;
