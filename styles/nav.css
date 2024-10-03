@@ -82,6 +82,7 @@
     z-index: 1;
 }
 
+
 .links-wrapper > .nav-link a::before {
     content: "";
     position: absolute;
@@ -100,7 +101,7 @@
 }
 
 .links-wrapper > .nav-link a:hover {
-    color: #09386f;
+    color: #E6D847;
     letter-spacing: 2px;
     transform: scale(1.1); /* Aumenta el tamaño del enlace un 10% */
 }
