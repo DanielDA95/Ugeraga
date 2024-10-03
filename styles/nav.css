@@ -23,15 +23,12 @@
     grid-template-columns: 1fr; 
     grid-gap: 10px;
 }
-.navigation-wrapper > .left-column > .contact-hours-wrapper > .hours {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: #858585;
-    font-size: 0.8em;
-}
+
 .links-wrapper > .nav-link a {
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
 }
+
 .navigation-wrapper > .center-column {
     display: grid;
     grid-template-columns: 1fr;
