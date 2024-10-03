@@ -13,10 +13,30 @@
 .navigation-wrapper > .left-column {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
+}
+.navigation-wrapper > .left-column > .icon {
+    font-size: 2em;
+}
+.navigation-wrapper > .left-column > .icon i {
+    margin-right: 15px;
+}
+.navigation-wrapper > .left-column > .contact-hours-wrapper {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-gap: 10px;
+}
+.navigation-wrapper > .left-column > .contact-hours-wrapper > .hours p {
+    font-family: 'Lato', sans-serif;
+    color: #858585;
+    font-size: 1.8em;
+}
+=======
     justify-content: center;
     flex-grow: 1; /* Añadido para que esta columna no desplace el contenido del centro */
 }
 
+>>>>>>> f4fc3b4e1429eac6bd476955319b61665252d272
 .links-wrapper > .nav-link a {
     font-family: 'Lato', sans-serif;
     color: white;
