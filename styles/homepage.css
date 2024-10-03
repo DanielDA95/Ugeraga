@@ -65,7 +65,7 @@
     background-image: url(../images/Backgrounds/fondo\ medio\ pagina\ index.jpg); /* Asegúrate de que la ruta de la imagen sea correcta */
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
-    border: 5px solid gold;
+    border: 5px solid #E6D847;
 }
 
 .news-title {

@@ -17,9 +17,7 @@
 
 .footer-structure-wrapper > .contact-hours-wrapper > .hours {
     font-size: 0.8em;
-    color: #cbcbcb;
-    display: flex;
-    position: center;
+    color: #cea135;
     text-transform: uppercase; /* Este código nos deja poner en mayúscula el texto escrito en HTML */
 }
 
@@ -41,7 +39,7 @@
     text-decoration: none;
 }
 .footer-structure-wrapper > .links-wrapper-footer a:hover {
-    color: gold;
+    color: #E6D847;
     letter-spacing: 2px;
 }
 .footer-structure-wrapper > .icons {
@@ -57,7 +55,7 @@
     transition: 0.5s;
 }
 .footer-structure-wrapper > .icons i:hover {
-    color: gold;
+    color: #E6D847;
     letter-spacing: 2px;
 }
 .copyright-wrapper {
