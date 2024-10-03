@@ -17,7 +17,7 @@
 
 .footer-structure-wrapper > .contact-hours-wrapper > .hours {
     font-size: 0.8em;
-    color: #cea135;
+    color: #cbcbcb;
     text-transform: uppercase; /* Este código nos deja poner en mayúscula el texto escrito en HTML */
 }
 

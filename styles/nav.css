@@ -39,7 +39,7 @@
     width: 500px;
 }
 .navigation-wrapper > .center-column > .banner-image {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
