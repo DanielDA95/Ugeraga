@@ -23,18 +23,20 @@
         padding-left: 21px;
         padding-right: 21px;
     }
-    .content-wrapper > #chef {
-        margin: 0px 0px 25px 0px !important; 
+    .content-wrapper > #history {
+        margin: 10px 10px 0px 0px !important; 
     }
     .square {
         grid-template-columns: 1fr !important;
     }
-    .square > .square-text-wrapper {
+
+    .square > .img-wrapper {
         order: 1;
     }
-    .square > .img-wrapper {
+    .square > .square-text-wrapper {
         order: 2;
     }
+   
     .contact-grid-wrapper {
         width: 100%;
         grid-template-columns: 1fr;

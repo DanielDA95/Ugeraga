@@ -2,6 +2,7 @@
 .squares-wrapper {
     display: flex;
     justify-content: center;
+    margin: 20px 20px 20px 20px;
 }
 .squares-wrapper > .squares {
     width: 1000px;
@@ -24,9 +25,12 @@
 .square > .square-text-wrapper {
     display: flex;
     justify-content: center;
+    text-align: justify;
     align-items: center;
     flex-direction: column;
     padding: 42px;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 .square > .square-text-wrapper h1 {
     color: #E6D847;
