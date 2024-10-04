@@ -17,14 +17,20 @@
 }
 
 .mapa {
-    width: 99%; /* Ocupa el 100% de la mitad derecha */
-    height: 99%; /* Asegura que el mapa ocupe toda la altura disponible */
+    width: 100%; /* Mantiene el 100% del ancho de su contenedor */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    display: flex; /* Cambia a flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 10%; /* Añade un padding del 10% en todos los lados */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el cálculo del tamaño total */
 }
 
 .mapa iframe {
     width: 100%; /* El mapa se ajusta al 100% del ancho de su contenedor */
     height: 100%; /* El mapa se ajusta al 100% de la altura de su contenedor */
-    min-height: 400px; /* Establece una altura mínima para pantallas pequeñas */
+    margin: -10%; /* Aplica un margen negativo para que el iframe se vea más pequeño */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Opcional: añade una sombra para mejorar el efecto visual */
 }
 
 .company-metadata-sidebar-wrapper {
