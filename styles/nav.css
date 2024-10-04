@@ -1,17 +1,16 @@
 .navigation-wrapper {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
-    justify-content: space-between; /* Alinea las columnas left, center y right horizontalmente */
+    justify-content: space-between; 
     align-items: center;
     padding: 20px;
     background-color: #09386f;
     color: #cbcbcb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     padding-left: 60px;
     padding-right: 60px;
 }
 
-/* Left column styles */
 .left-column {
     flex: 1;
     text-align: center;
@@ -23,18 +22,15 @@
     margin: 0;
 }
 
-/* Center column styles */
 .center-column {
     flex: 2;
     text-align: center;
 }
-
 .banner-image img {
     max-width: 100px;
     height: auto;
 }
 
-/* Right column styles */
 .right-column {
     flex: 1;
     text-align: center;
@@ -61,10 +57,9 @@
     color: #0056b3;
 }
 
-/* Button column styles: centrado debajo del centro */
 .button-column {
     display: flex;
-    justify-content: center; /* Asegura que la columna esté centrada horizontalmente */
+    justify-content: center; 
     margin-top: -4px;
     background-color: #09386f;
     padding-bottom: 4mm;
@@ -94,18 +89,14 @@
 }
 
 
-/*<!-- Menú de Categorías --> */
-
-/* Contenedor del menú centrado */
 .links-wrapper2 {
     display: flex;
-    justify-content: center; /* Centra el menú horizontalmente */
+    justify-content: center;
     margin: 20px 0;
     position: relative;
     z-index: 1000;
 }
 
-/* Botón del menú */
 .dropbtn {
     background-color: #005b96;
     color: white;
@@ -118,14 +109,12 @@
     z-index: 1001;
 }
 
-/* Contenedor del menú desplegable */
 .dropdown {
     position: relative;
     display: inline-block;
-    text-align: center; /* Asegura que el contenido esté centrado */
+    text-align: center; 
 }
 
-/* Contenido del menú desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -134,10 +123,9 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2000;
     border-radius: 5px;
-    text-align: left; /* Opcional: para alinear el texto a la izquierda */
+    text-align: left; 
 }
 
-/* Cada enlace dentro del menú desplegable */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -147,12 +135,11 @@
     transition: background-color 0.3s ease;
 }
 
-/* Efecto hover en cada enlace */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-/* Mostrar el menú desplegable al hacer hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -161,20 +148,20 @@
     .navigation-wrapper {
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Centramos el texto y los elementos */
+        text-align: center;
     }
 
     .left-column, .center-column, .right-column {
         flex: 1;
-        margin-bottom: 20px; /* Espacio entre columnas */
+        margin-bottom: 20px;
     }
 
     .links-wrapper {
-        flex-direction: column; /* Apila los enlaces verticalmente */
+        flex-direction: column; 
     }
 
     .nav-link {
-        margin: 10px 0; /* Añade espaciado entre los enlaces */
+        margin: 10px 0; 
     }
 
     .right-column {
@@ -186,21 +173,20 @@
     }
 }
 
-/* Pantallas muy pequeñas (móviles en modo retrato) */
 @media (max-width: 480px) {
     .banner-image img {
-        max-width: 100px; /* Reducimos el tamaño del logo para pantallas muy pequeñas */
+        max-width: 100px;
     }
 
     .nav-link a {
-        font-size: 14px; /* Reducimos el tamaño de los textos de los enlaces */
+        font-size: 14px; 
     }
 
     #address-wrapper {
-        font-size: 12px; /* Reducimos el tamaño del texto de la dirección */
+        font-size: 12px; 
     }
 
     .contact-icon a {
-        font-size: 18px; /* Ajustamos el tamaño del ícono */
+        font-size: 18px; 
     }
 }

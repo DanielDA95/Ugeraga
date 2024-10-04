@@ -1,5 +1,4 @@
-/* Ayudantes de estilo para dar margen o espaciado entre el texto y las imagenes del trablero, y esto nos da la posiblidad de que esa margen
-solo se apique en este momento y no se haga despues en otros contenidos por lo de herencia y debe estar agregado cmo clase en HTML*/
+
 .spacer60 {
     height: 60px;
     width: 100%;
@@ -8,7 +7,7 @@ solo se apique en este momento y no se haga despues en otros contenidos por lo d
     height: 10px;
     width: 100%;
 }
-/* Estilos para el carrusel */
+
 .carousel-container {
     position: relative;
     max-width: 20%;
@@ -29,7 +28,6 @@ solo se apique en este momento y no se haga despues en otros contenidos por lo d
     border-radius: 15px;
 }
 
-/* Botones de navegación del carrusel */
 .prev {
     position: absolute;
     top: 50%;

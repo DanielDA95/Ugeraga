@@ -1,24 +1,21 @@
-/* Estilos generales para el footer */
 .footer-structure-wrapper {
     background-color: #09386f;
     color: #cbcbcb;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra horizontalmente */
+    flex-direction: column;
+    align-items: center; 
     text-align: center;
-    padding: 50px 0; /* Ajustamos el padding */
-    margin-top: -4px; /* Elimina línea blanca entre contenido y pie de página */
+    padding: 50px 0;
+    margin-top: -4px; 
 }
 
-/* Imagen del logo */
 .footer-image img {
     height: 80px;
     width: auto;
-    margin-bottom: 20px; /* Espaciado debajo del logo */
+    margin-bottom: 20px; 
 }
 
-/* Estilo para el nombre del club */
 .contact-hours-wrapper .hours {
     font-size: 1.2em;
     color: #cbcbcb;
@@ -26,14 +23,14 @@
     margin-bottom: 20px;
 }
 
-/* Links del menú en el footer */
+
 .links-wrapper-footer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
-    gap: 15px; /* Espacio entre los links */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
     margin: 20px 0;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 600px; /* Limitar el ancho máximo para que no se estire mucho */
+    width: 100%;
+    max-width: 600px; 
 }
 
 .links-wrapper-footer a {
@@ -47,11 +44,11 @@
     transform: scale(1.1);
 }
 
-/* Iconos de redes sociales */
+
 .icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 iconos en fila */
-    gap: 30px; /* Espacio entre iconos */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
     margin: 20px 0;
 }
 
@@ -65,32 +62,30 @@
     color: #E6D847;
 }
 
-/* Estilo de copyright */
 .copyright-wrapper {
     font-size: 0.8em;
     color: #858585;
     margin-top: 20px;
 }
 
-/* Responsive para pantallas más pequeñas */
 @media (max-width: 768px) {
     .links-wrapper-footer {
-        grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
     }
     
     .icons {
-        grid-template-columns: repeat(3, 1fr); /* Mantener iconos en fila */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .links-wrapper-footer {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
         gap: 15px;
     }
     
     .icons {
-        grid-template-columns: repeat(3, 1fr); /* Mantener iconos en fila */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
