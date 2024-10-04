@@ -67,6 +67,7 @@
     justify-content: center; /* Asegura que la columna esté centrada horizontalmente */
     margin-top: -4px;
     background-color: #09386f;
+    padding-bottom: 4mm;
 }
 
 .links-wrapper {

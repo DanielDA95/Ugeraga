@@ -1,27 +1,54 @@
-.contact-grid-wrapper {
-    width: 1000px;
+.page-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-gap: 20px; /* Espacio entre las columnas */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    height: 100vh; /* Asegura que ambas columnas ocupen la altura total de la pantalla */
+}
+
+.contact-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Mantiene el ancho al 100% de su mitad */
+    padding: 20px;
+    height: 100%; /* Asegura que ocupe toda la altura */
+}
+
+.mapa {
+    width: 99%; /* Ocupa el 100% de la mitad derecha */
+    height: 99%; /* Asegura que el mapa ocupe toda la altura disponible */
+}
+
+.mapa iframe {
+    width: 100%; /* El mapa se ajusta al 100% del ancho de su contenedor */
+    height: 100%; /* El mapa se ajusta al 100% de la altura de su contenedor */
+    min-height: 400px; /* Establece una altura mínima para pantallas pequeñas */
+}
+
+.company-metadata-sidebar-wrapper {
+    width: auto;
+    text-align: center;
 }
 
 .company-metadata-sidebar-wrapper > .logo img {
-    width: 100%;
+    max-width: 150px; /* Controla el tamaño del logo */
     margin-bottom: 20px;
 }
 
 .company-metadata-sidebar-wrapper > .company-details-wrapper {
-    display: flex;
-    font-family: 'Lato', sans-serif; /* Cambio de Barlow Condensed a Lato */
-    font-weight: 700; /* Peso adecuado para la fuente Lato */
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: right;
-    align-items: center;
+    margin: 20px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .company-metadata-sidebar-wrapper > .company-details-wrapper i {
     color: #E6D847;
+    margin-right: 10px;
 }
