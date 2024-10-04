@@ -1,65 +1,96 @@
+/* Estilos generales para el footer */
 .footer-structure-wrapper {
     background-color: #09386f;
     color: #cbcbcb;
-    font-family: 'Lato', sans-serif; /* Cambio de Barlow Condensed a Lato */
+    font-family: 'Barlow Condensed', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Esta línea de código me ayuda a que la imagen esté encima de todo */
-    height: 250px;
-    padding: 100px 150px;
-    margin-top: -4px; /* Darle este valor para quitar la línea blanca que exista entre el mapa y el pie de página */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+    padding: 50px 0; /* Ajustamos el padding */
+    margin-top: -4px; /* Elimina línea blanca entre contenido y pie de página */
 }
-.footer-structure-wrapper > .footer-image img {
+
+/* Imagen del logo */
+.footer-image img {
     height: 80px;
     width: auto;
- }
-
-.footer-structure-wrapper > .contact-hours-wrapper > .hours {
-    font-size: 0.8em;
-    color: #cbcbcb;
-    text-transform: uppercase; /* Este código nos deja poner en mayúscula el texto escrito en HTML */
+    margin-bottom: 20px; /* Espaciado debajo del logo */
 }
 
+/* Estilo para el nombre del club */
+.contact-hours-wrapper .hours {
+    font-size: 1.2em;
+    color: #cbcbcb;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
-.footer-structure-wrapper > .links-wrapper-footer {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 500px;
+/* Links del menú en el footer */
+.links-wrapper-footer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    justify-items: center; 
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+    gap: 15px; /* Espacio entre los links */
+    margin: 20px 0;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* Limitar el ancho máximo para que no se estire mucho */
 }
 
-.footer-structure-wrapper > .links-wrapper-footer a {
-    margin: 0 15px;
+.links-wrapper-footer a {
     color: #cbcbcb;
-    transition: 0.8s;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-.footer-structure-wrapper > .links-wrapper-footer a:hover {
+
+.links-wrapper-footer a:hover {
     color: #E6D847;
-    letter-spacing: 2px;
+    transform: scale(1.1);
 }
-.footer-structure-wrapper > .icons {
+
+/* Iconos de redes sociales */
+.icons {
     display: grid;
-    justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 42px;
-    line-height: 4;
+    grid-template-columns: repeat(3, 1fr); /* 3 iconos en fila */
+    gap: 30px; /* Espacio entre iconos */
+    margin: 20px 0;
 }
-.footer-structure-wrapper > .icons i {
+
+.icons i {
     font-size: 1.5em;
     color: #cbcbcb;
-    transition: 0.5s;
+    transition: color 0.3s ease;
 }
-.footer-structure-wrapper > .icons i:hover {
+
+.icons i:hover {
     color: #E6D847;
-    letter-spacing: 2px;
 }
+
+/* Estilo de copyright */
 .copyright-wrapper {
-    margin-bottom: 42px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #858585;
+    margin-top: 20px;
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .links-wrapper-footer {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas */
+        gap: 10px;
+    }
+    
+    .icons {
+        grid-template-columns: repeat(3, 1fr); /* Mantener iconos en fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .links-wrapper-footer {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        gap: 15px;
+    }
+    
+    .icons {
+        grid-template-columns: repeat(3, 1fr); /* Mantener iconos en fila */
+    }
 }
