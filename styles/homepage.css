@@ -9,25 +9,9 @@
 .subscribe-button {
     font-size: 20px;
     font-weight: bold;
-    animation: fadeIn 2s ease-in-out; 
     font-family: 'Arial', sans-serif; 
     color: #333;
-    border-width: 400px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);   
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.subscribe-button {
     display: center;
     background-color: #09386f; 
     color: white;
@@ -41,16 +25,15 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
     margin-top: 20px; 
-    border-width: 4px; 
-   
 }
 
 .subscribe-button:hover {
     background-color: #E6D847;
     color: black;
+    transform: scale(1.05);
 }
 
 .hero-section {
@@ -80,26 +63,15 @@
     margin-bottom: 30px;
 }
 
-.news-title {
+h2 {
     background-color: #09386f;
     color: white;
     border-radius: 10px;
     padding: 5px 10px;
     text-align: center;
-    transition: background-color 0.5s, letter-spacing 0.5s, transform 0.5s;
     margin-bottom: 20px;
-}
-
-.news-title h1 {
-    font-size: 2.5em;
-    margin: 0; 
-}
-
-.news-title:hover {
-    background-color: #E6D847; 
-    letter-spacing: 2px; 
-    transform: scale(1.05); 
-    color: black;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .news-wrapper {
@@ -117,24 +89,92 @@
     transition: background-color 0.3s ease; 
 }
 
-.news-item img {
-    max-width: 100%;
-    height: auto; 
-    border-radius: 10px; 
-    transition: transform 0.3s ease; 
+.news-item p {
+    text-align: justify; /* Justificar el texto */
+    margin: 0; /* Asegúrate de que no haya margen adicional */
+    padding: 10px 300px;
+}
+a {
+    text-decoration: none; /* Quitar el subrayado */
+    color: inherit; /* Mantener el color del texto original */
+    transition: color 0.3s ease; /* Agregar transición para un cambio suave de color */
+}
+
+a:visited {
+    color: inherit; /* Mantener el color del texto original después de hacer clic */
+}
+
+/* Cambiar el color a dorado al pasar el ratón */
+a:hover {
+    color: #E6D847; /* Cambiar a dorado */
+    font-weight: bold; /* Hacer el texto más llamativo */
 }
 
 
-.news-item:hover img {
-    transform: scale(1.1);
+.gallery-section {
+    padding: 20px;
+    text-align: center;
 }
 
-.news-item:hover {
-    background-color: #ffcc00; 
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.patrocinadores {
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+.gallery-image {
+    width: 200px; /* Ajusta según tus necesidades */
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 500px;
-    background-color: rgb(116, 120, 124);
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#caption {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }

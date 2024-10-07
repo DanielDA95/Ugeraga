@@ -78,28 +78,47 @@
 
         
         <div class="features-section">
-            <div class="news-title">
-                <h1>NOTICIAS</h1>
-            </div>
             <div class="news-wrapper">
                 <div class="news-item">
-                    <p>Tabla de pocisiones.</p>
-                    <img src="./images/Noticias/Tabla 03_10_2024.png" alt="Tabla-principal-masc">
+                    <h2>Eventos y Próximos Partidos</h2>
+                    <p>Para estar al tanto de los próximos partidos y eventos del club, te invitamos a visitar el calendario oficial de la Federación Vizcaína de Fútbol. Allí encontrarás información actualizada sobre las fechas, horarios y ubicaciones de los encuentros de nuestros equipos.</p>
+                    <h3>Consulta el calendario completo de partidos en el siguiente enlace:</h3>
+                    <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_CmpJornada?cod_primaria=1000120&CodCompeticion=1894454&CodGrupo=1923374&CodTemporada=20&cod_agrupacion=&CodJornada=3&Sch_Tipo_Juego=" target="_blank" class="calendar-link">Calendario de la Federación Vizcaína de Fútbol</a>
                 </div>
                 <div class="news-item">
-                    <p>Proximos partidos.</p>
-                    <img src="./images/Noticias/Proximo partido.png" alt="partido">
+                    <h2>Tabla de Posiciones</h2>
+                    <p>Puedes consultar la tabla de posiciones actualizada de todas las categorías en las que participa el club visitando la página de la Federación Vizcaína de Fútbol. Allí podrás seguir el desempeño de nuestros equipos a lo largo de la temporada.</p>
+                    <h3>Consulta la tabla de posiciones completa en el siguiente enlace:</h3>
+                    <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisClasificacion?cod_primaria=1000120&codjornada=3&codcompeticion=1894454&codgrupo=1923374&codjornada=3" target="_blank" class="standings-link">Tabla de Posiciones de la Federación Vizcaína de Fútbol</a>
                 </div>
-                <div class="news-item">
-                    <p>Partidos Equipo Femenino</p>
-                    <img src="./images/Noticias/Partidos_Femeninos.png" alt="">
-                </div>
-                <!-- Aquí puedes añadir más elementos de noticias -->
             </div>
         </div>
- 
-        <div class="patrocinadores">
-            <h1>Aqui van los patrocinadores</h1>
+        <div class="gallery-section">
+            <h1 class="gallery-title">Galería de Imágenes</h1>
+            <div class="gallery-wrapper">
+                <div class="gallery-item">
+                    <img src="images/Noticias/01.jpeg" alt="Descripción de la imagen 1" class="gallery-image" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Noticias/02.jpeg" alt="Descripción de la imagen 2" class="gallery-image" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Noticias/03.jpeg" alt="Descripción de la imagen 3" class="gallery-image" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Noticias/04.jpeg" alt="Descripción de la imagen 3" class="gallery-image" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Noticias/05.jpeg" alt="Descripción de la imagen 3" class="gallery-image" onclick="openModal(this)">
+                </div>
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+        </div>
+        
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
         </div>
 
             <!--PIE DE PAGINA-->
@@ -160,5 +179,6 @@
              </div>
      
         </div>
+        <script src="scripts/scripts.js"></script>
     </body>
 </html>
