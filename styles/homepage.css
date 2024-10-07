@@ -63,7 +63,7 @@
     margin-bottom: 30px;
 }
 
-h2 {
+.features-section h2 {
     background-color: #09386f;
     color: white;
     border-radius: 10px;
@@ -72,11 +72,13 @@ h2 {
     margin-bottom: 20px;
     margin: 0;
     font-size: 1.5em;
+    width: 500px;
+    margin-left: 450px;
 }
 
 .news-wrapper {
     width: 100%;
-    max-width: 1300px;
+    max-width: auto;
     margin-top: 20px;
 }
 
@@ -94,22 +96,25 @@ h2 {
     margin: 0; /* Asegúrate de que no haya margen adicional */
     padding: 10px 300px;
 }
-a {
+.news-item a {
     text-decoration: none; /* Quitar el subrayado */
     color: inherit; /* Mantener el color del texto original */
-    transition: color 0.3s ease; /* Agregar transición para un cambio suave de color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Agregar transición para color y tamaño */
+    display: inline-flex; /* Mantener el link y el ícono en la misma línea */
+    align-items: center; /* Alinear verticalmente el ícono y el texto */
 }
 
-a:visited {
-    color: inherit; /* Mantener el color del texto original después de hacer clic */
+.news-item i {
+    font-size: 1.5em; /* Tamaño del ícono más grande de forma estática */
+    margin-left: 10px; /* Espaciado entre el ícono y el texto */
+    color: #E6D847; /* Cambiar a dorado */
+    font-weight: bold;
 }
 
-/* Cambiar el color a dorado al pasar el ratón */
-a:hover {
+.news-item a:hover {
     color: #E6D847; /* Cambiar a dorado */
     font-weight: bold; /* Hacer el texto más llamativo */
 }
-
 
 .gallery-section {
     padding: 20px;
