@@ -67,13 +67,16 @@
 
 .links-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Cambiado para distribuir el espacio */
     margin-top: 10px;
+    width: 50%; /* Para que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Ancho máximo para limitar la expansión en pantallas grandes */
 }
 
 .nav-link {
-    margin: 0 15px;
+    margin: 0 30px; /* Aumentado el margen lateral para más separación */
 }
+
 
 .nav-link a {
     text-decoration: none;
@@ -149,13 +152,16 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
 
     .left-column, .center-column, .right-column {
         flex: 1;
         margin-bottom: 20px;
     }
-
+    .button-column {
+        padding-left: 145px;
+    }
     .links-wrapper {
         flex-direction: column; 
     }
