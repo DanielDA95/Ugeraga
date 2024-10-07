@@ -9,25 +9,9 @@
 .subscribe-button {
     font-size: 20px;
     font-weight: bold;
-    animation: fadeIn 2s ease-in-out; 
     font-family: 'Arial', sans-serif; 
     color: #333;
-    border-width: 400px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);   
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.subscribe-button {
     display: center;
     background-color: #09386f; 
     color: white;
@@ -41,16 +25,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
     margin-top: 20px; 
-    border-width: 4px; 
-   
-}
-
-.subscribe-button:hover {
-    background-color: #E6D847;
-    color: black;
 }
 
 .subscribe-button:hover {
@@ -86,59 +63,54 @@
     margin-bottom: 30px;
 }
 
-.features-section h2 {
+h2 {
     background-color: #09386f;
     color: white;
     border-radius: 10px;
     padding: 5px 10px;
     text-align: center;
     margin-bottom: 20px;
+    margin: 0;
     font-size: 1.5em;
-    width: auto; /* Cambiar de 500px a auto */
-    display: inline-block; /* Permitir que el h2 tenga tamaño en función de su contenido */
 }
-
 
 .news-wrapper {
     width: 100%;
-    max-width: auto;
+    max-width: 1300px;
     margin-top: 20px;
 }
 
 .news-item {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px; 
-    padding: 15px;
-    margin-bottom: 10px; 
-    text-align: center;
-    transition: background-color 0.3s ease; 
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 
 .news-item p {
-    text-align: justify; /* Justificar el texto */
-    margin: 0; /* Asegúrate de que no haya margen adicional */
-    padding: 10px 300px;
-    hyphens: auto;
+    max-width: 800px;
 }
-.news-item a {
+
+a {
     text-decoration: none; /* Quitar el subrayado */
     color: inherit; /* Mantener el color del texto original */
-    transition: color 0.3s ease, transform 0.3s ease; /* Agregar transición para color y tamaño */
-    display: inline-flex; /* Mantener el link y el ícono en la misma línea */
-    align-items: center; /* Alinear verticalmente el ícono y el texto */
+    transition: color 0.3s ease; /* Agregar transición para un cambio suave de color */
 }
 
-.news-item i {
-    font-size: 1.5em; /* Tamaño del ícono más grande de forma estática */
-    margin-left: 10px; /* Espaciado entre el ícono y el texto */
-    color: #E6D847; /* Cambiar a dorado */
-    font-weight: bold;
+a:visited {
+    color: inherit; /* Mantener el color del texto original después de hacer clic */
 }
 
-.news-item a:hover {
+/* Cambiar el color a dorado al pasar el ratón */
+a:hover {
     color: #E6D847; /* Cambiar a dorado */
     font-weight: bold; /* Hacer el texto más llamativo */
 }
+
 
 .gallery-section {
     padding: 20px;
