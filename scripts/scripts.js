@@ -20,7 +20,7 @@ function showCategory(categoryId) {
         selectedCategory.style.display = 'block';
     }
 }
-
+//Script de imagenes index galeria.
 function openModal(imgElement) {
     var modal = document.getElementById("modal");
     var modalImg = document.getElementById("modal-img");

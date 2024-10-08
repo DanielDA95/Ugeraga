@@ -95,18 +95,18 @@ h2 {
     max-width: 800px;
 }
 
-a {
+.news-item a {
     text-decoration: none; /* Quitar el subrayado */
     color: inherit; /* Mantener el color del texto original */
     transition: color 0.3s ease; /* Agregar transición para un cambio suave de color */
 }
 
-a:visited {
+.news-item a:visited {
     color: inherit; /* Mantener el color del texto original después de hacer clic */
 }
 
 /* Cambiar el color a dorado al pasar el ratón */
-a:hover {
+.news-item a:hover {
     color: #E6D847; /* Cambiar a dorado */
     font-weight: bold; /* Hacer el texto más llamativo */
 }
