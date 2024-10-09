@@ -23,25 +23,3 @@
     letter-spacing: 1px;
     line-height: 30px;
 }
-
-/* Nuevos estilos para el texto de las categorías */
-.page-container > .content-wrapper h2 {
-    font-size: 1.4rem; /* Ajusta el tamaño de la fuente según lo necesites */
-    margin-top: 30px; /* Espaciado superior */
-    margin-bottom: 15px; /* Espaciado inferior */
-}
-
-.page-container > .content-wrapper h3 {
-    font-size: 1.2em; /* Ajusta el tamaño de la fuente para los subtítulos */
-    margin-top: 20px; /* Espaciado superior */
-    margin-bottom: 10px; /* Espaciado inferior */
-}
-
-.page-container > .content-wrapper ul {
-    padding-left: 20px; /* Espacio a la izquierda para las listas */
-    margin-bottom: 15px; /* Espaciado inferior para las listas */
-}
-
-.page-container > .content-wrapper li {
-    line-height: 1.5; /* Espaciado entre líneas dentro de las listas */
-}
