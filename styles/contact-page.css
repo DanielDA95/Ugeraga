@@ -1,11 +1,16 @@
+/* Estilo principal para la página */
 .page-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     width: 100%; 
-    height: 100vh; 
+    min-height: 100vh; /* Asegurar que la altura mínima sea del 100% de la pantalla */
+    box-sizing: border-box; /* Incluir padding y border en los cálculos de ancho y alto */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para toda la página */
 }
 
+/* Flexbox para centrar contenido dentro de la cuadrícula */
 .contact-grid-wrapper {
     display: flex;
     justify-content: center;
@@ -13,12 +18,12 @@
     flex-direction: column;
     width: 100%;
     padding: 20px;
-    height: 100%;
 }
 
+/* Ajustes de la sección del mapa */
 .mapa {
     width: 100%; 
-    height: 100%; 
+    height: 400px; /* Altura específica para el mapa */
     display: flex; 
     justify-content: center;
     align-items: center; 
@@ -29,13 +34,16 @@
 .mapa iframe {
     width: 100%; 
     height: 100%; 
-    margin: -10%; 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* Ajustes para la barra lateral de metadatos */
 .company-metadata-sidebar-wrapper {
-    width: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .company-metadata-sidebar-wrapper > .logo img {
@@ -57,4 +65,46 @@
 .company-metadata-sidebar-wrapper > .company-details-wrapper i {
     color: #E6D847;
     margin-right: 10px;
+}
+
+/* Responsividad para pantallas medianas (tablets) */
+@media screen and (max-width: 768px) {
+    .page-container {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    /* Mover el mapa debajo de la información */
+    .company-metadata-sidebar-wrapper {
+        order: 1; /* Información de la empresa primero */
+    }
+
+    .mapa {
+        order: 2; /* Mapa después de la información */
+        width: 100%;
+        padding: 15px;
+        height: 300px; /* Altura ajustada en pantallas más pequeñas */
+    }
+
+    .mapa iframe {
+        height: 100%; /* Asegurar que el iframe use todo el espacio */
+    }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+    .company-details-wrapper i {
+        font-size: 1.2em;
+    }
+
+    .company-details-wrapper div {
+        font-size: 14px;
+    }
+
+    .mapa {
+        height: 250px; /* Ajuste de la altura del mapa para móviles */
+    }
+
+    .mapa iframe {
+        height: 100%;
+    }
 }

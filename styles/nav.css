@@ -160,7 +160,8 @@
         margin-bottom: 20px;
     }
     .button-column {
-        padding-left: 145px;
+        justify-content: center;
+        text-align: center;
     }
     .links-wrapper {
         flex-direction: column; 
