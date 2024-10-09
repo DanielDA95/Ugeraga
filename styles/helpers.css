@@ -10,7 +10,7 @@
 
 .carousel-container {
     position: relative;
-    max-width: 20%;
+    max-width: 50%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 15px;
@@ -64,4 +64,16 @@
 
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content-container h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina márgenes para un mejor alineamiento */
+    padding: 20px 0; /* Espacio alrededor del h2 */
+}
+
+#content-container p {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina márgenes para un mejor alineamiento */
+    padding: 20px 0; /* Espacio alrededor del h2 */
 }
