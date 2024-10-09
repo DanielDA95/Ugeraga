@@ -27,7 +27,7 @@
 
 <body>
 
-    <div class="navigation-wrapper">
+    <div class="navigation-wrapper" role="navigation" aria-label="Navegación principal"> <!-- Añadido role y aria-label para accesibilidad -->
         <div class="left-column">
             <div class="nombre_club">
                 <h1>Historia</h1>
@@ -36,25 +36,25 @@
         
         <div class="center-column">
             <div class="banner-image">
-                <img src="images/logos/logo.png" alt="Logo">
+                <img src="images/logos/logo.png" alt="Logo del club" loading="lazy"> <!-- Añadido loading="lazy" para optimizar carga -->
             </div>
         </div>
     
         <div class="right-column">
             <div id="address-wrapper">
-                <a href="contacto.html">
+                <a href="contacto.html" aria-label="Ir a la página de contacto"> <!-- Añadido aria-label para accesibilidad -->
                     Gatzarriñe Kalea, 26D,
                     <br> 48600 Sopela, Bizkaia 
                 </a>
             </div>
             <div class="contact-icon">
-                <a href="contacto.html">
+                <a href="contacto.html" aria-label="Icono de ubicación"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
             </div>
         </div>
     </div>
-    <!-- Mover la button-column aquí, debajo del center-column -->
+    
     <div class="button-column">
         <div class="links-wrapper">
             <div class="nav-link">
@@ -77,54 +77,50 @@
 
     <div class="page-container">
         <div class="content-wrapper">
-            <!--La imagen va aqui-->
-            <img src="images/people/historia1.jpg" alt="featured history" id="history">
+            <!-- La imagen va aquí -->
+            <img src="images/people/historia1.jpg" alt="featured history" id="history" loading="lazy">
             <p>Había una vez en un pequeño pueblo costero llamado Puerto Azul, un equipo de fútbol que representaba el orgullo y la esperanza de toda la comunidad. El equipo se llamaba Los Delfines del Mar. Aunque el club no tenía los recursos ni la fama de los grandes equipos, sus jugadores eran conocidos por su pasión, dedicación y espíritu de lucha.</p>
             <p>La Fundación del Equipo</p>
-            <p>Hace veinte años, un pescador llamado Don Emilio decidió formar un equipo con los jóvenes del pueblo. A pesar de no tener un estadio propio ni uniformes elegantes, Don Emilio creía en el poder del fútbol para unir a la gente. Con un balón viejo y una cancha improvisada en la playa, comenzó a entrenar a los jóvenes todas las tardes después de sus labores diarias.
-               Con el tiempo, Los Delfines se convirtieron en un símbolo de resistencia. En su primer torneo regional, llegaron a las semifinales, sorprendiendo a todos los equipos más fuertes. El estilo de juego de Los Delfines era peculiar: combinaban la agilidad y rapidez de los pescadores con una coordinación impecable, fruto de años de trabajar juntos como equipo.</p>
+            <p>Hace veinte años, un pescador llamado Don Emilio decidió formar un equipo con los jóvenes del pueblo. A pesar de no tener un estadio propio ni uniformes elegantes, Don Emilio creía en el poder del fútbol para unir a la gente. Con un balón viejo y una cancha improvisada en la playa, comenzó a entrenar a los jóvenes todas las tardes después de sus labores diarias. 
+                Con el tiempo, Los Delfines se convirtieron en un símbolo de resistencia. En su primer torneo regional, llegaron a las semifinales, sorprendiendo a todos los equipos más fuertes. El estilo de juego de Los Delfines era peculiar: combinaban la agilidad y rapidez de los pescadores con una coordinación impecable, fruto de años de trabajar juntos como equipo.</p>
         </div>
     </div>
-
-    <div class="spacer60"><!--se deja vacio para que el codigo en css haga la margen que se neceista--></div>
-
+    
+    <div class="spacer60"><!--se deja vacío para que el código en CSS haga la margen que se necesita--></div>
+    
     <div class="squares-wrapper"> 
         <div class="squares">
             <div class="square">
-                <!--Buscar unsplash para agregar fotos gratis-->
+                <!-- Buscar unsplash para agregar fotos gratis -->
                 <div class="img-wrapper">
-                    <img src="images/people/historia2.jpg" alt="Fries">
+                    <img src="images/people/historia2.jpg" alt="Descripción de la imagen" loading="lazy">
                 </div>
-
+    
                 <div class="square-text-wrapper">
                     <h1>El Desafío del Año</h1>
-
-                    <p>La historia principal se centra en un año crucial. Después de varios años de competencia, el equipo recibió la noticia de que la liga nacional amateur, en la que participaban, había decidido realizar un torneo especial cuyo ganador ascendería a la segunda división profesional. Era una oportunidad que ninguno de los jugadores se atrevía a soñar, pero significaba competir contra equipos mucho más fuertes y con más recursos.
-                       Sin embargo, el desafío no solo era deportivo. El viejo campo donde jugaban estaba en peligro de ser vendido a una empresa extranjera que planeaba construir un hotel de lujo en la playa. El alcalde del pueblo, presionado por los inversionistas, ya había aprobado el proyecto, lo que dejaría a Los Delfines sin lugar donde entrenar ni jugar.</p>
+                    <p>La historia principal se centra en un año crucial. Después de varios años de competencia, el equipo recibió la noticia de que la liga nacional amateur, en la que participaban, había decidido realizar un torneo especial cuyo ganador ascendería a la segunda división profesional. Era una oportunidad que ninguno de los jugadores se atrevía a soñar, pero significaba competir contra equipos mucho más fuertes y con más recursos. 
+                        Sin embargo, el desafío no solo era deportivo. El viejo campo donde jugaban estaba en peligro de ser vendido a una empresa extranjera que planeaba construir un hotel de lujo en la playa. El alcalde del pueblo, presionado por los inversionistas, ya había aprobado el proyecto, lo que dejaría a Los Delfines sin lugar donde entrenar ni jugar.</p>
                 </div>
             </div>
-
+    
             <div class="square">
                 <div class="square-text-wrapper">
                     <h1>La Batalla Fuera del Campo</h1>
-
                     <p>Con el apoyo de los habitantes del pueblo, el equipo decidió que debían ganar el torneo no solo por el honor, sino para salvar su campo. Se organizaron rifas, ferias y eventos benéficos para recaudar fondos y conseguir abogados que lucharan contra el proyecto del hotel. Cada partido del torneo se jugaba como si fuera el último, y poco a poco, Los Delfines fueron avanzando.</p>
                 </div>
                 <div class="img-wrapper">
-                    <img src="images/people/historia3.jpg" alt="Fries">
+                    <img src="images/people/historia3.jpg" alt="Descripción de la imagen" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="footer-structure-wrapper">
-            <div class="footer-image">
-                <img src="images/logos/logo.png" alt="Logo" height: 150px;> 
-            </div>
+        <div class="footer-image">
+            <img src="images/logos/logo.png" alt="Logo del club" loading="lazy"> <!-- Añadido loading="lazy" para optimizar carga -->
+        </div>
         <div class="contact-hours-wrapper">
-                <span class="hours">
-                <p> SD Ugeraga </p>
-                </span>
+            <p class="hours">SD Ugeraga</p>
         </div>
 
         <div class="links-wrapper-footer">
@@ -145,37 +141,33 @@
             </div>
         </div>
 
-        <div class="icons">
+        <div class="icons" role="contentinfo" aria-label="Redes sociales"> <!-- Añadido role y aria-label para accesibilidad -->
             <div class="instagram">
-                <a href="https://www.instagram.com/sdugeraga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <a href="https://www.instagram.com/sdugeraga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
             <div class="x-twitter">
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fx.com%2Fsdugeraga%3Fs%3D11%26t%3Dv0dyGxgcIqKsmU6NMo-3KA%26fbclid%3DPAZXh0bgNhZW0CMTEAAaYtpy11TyI_7ehbZolcejbb1XPPLMA0ZoPUrbVmgrccQh3DS8rmdyk9v7U_aem_conI_qykwiAwa6x944YKxw&e=AT0kexpRxjmkQiejEnwXaVCjxNxYjno9G7S9-x_bJBfpjPGjg1aWntpMhcpiCb0PatXuoFioi8HkqBT-tPnbXKovJGjDFXc-moRVMaI" target="_blank">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fx.com%2Fsdugeraga%3Fs%3D11%26t%3Dv0dyGxgcIqKsmU6NMo-3KA%26fbclid%3DPAZXh0bgNhZW0CMTEAAaYtpy11TyI_7ehbZolcejbb1XPPLMA0ZoPUrbVmgrccQh3DS8rmdyk9v7U_aem_conI_qykwiAwa6x944YKxw&e=AT0kexpRxjmkQiejEnwXaVCjxNxYjno9G7S9-x_bJBfpjPGjg1aWntpMhcpiCb0PatXuoFioi8HkqBT-tPnbXKovJGjDFXc-moRVMaI" target="_blank" aria-label="Twitter de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
             <div class="facebook">
-                <a href="https://www.facebook.com/groups/100079906883/" target="_blank">
+                <a href="https://www.facebook.com/groups/100079906883/" target="_blank" aria-label="Facebook de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
             <div class="Tik-Tok">
-                <a href="https://www.tiktok.com/@ugeraga?_t=8pAbxuQcNjl&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaaitP7oRWiYjMb1Y9qnlSZnaT0AImR512NHZ8zLkO_usaJNIBMhAb6v-Os_aem_bQvWaWfJTYcBcifmsmH9Jg" target="_blank">
+                <a href="https://www.tiktok.com/@ugeraga?_t=8pAbxuQcNjl&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaaitP7oRWiYjMb1Y9qnlSZnaT0AImR512NHZ8zLkO_usaJNIBMhAb6v-Os_aem_bQvWaWfJTYcBcifmsmH9Jg" target="_blank" aria-label="TikTok de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
             </div>
         </div>
-        
         
         <div class="copyright-wrapper">
             &copy; 2024 Página hecha por Carlos y Daniel &#124; Todos los derechos reservados 
         </div>
 
     </div>
-
-</div>
-
 </body>
 </html>
