@@ -2,11 +2,14 @@
     display: flex;
     justify-content: center;
     text-align: justify;
+    font-family:'Lato', sans-serif;
 }
 
 .page-container > .content-wrapper {
     width: 1000px;
+    text-align: justify;
 }
+
 .page-container > .content-wrapper > #history {
     width: 350px;
     margin: 23px 40px 20px 20px; 
@@ -15,7 +18,30 @@
     border-radius: 10px; 
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
 }
+
 .page-container > .content-wrapper p {
     letter-spacing: 1px;
     line-height: 30px;
+}
+
+/* Nuevos estilos para el texto de las categorías */
+.page-container > .content-wrapper h2 {
+    font-size: 1.4rem; /* Ajusta el tamaño de la fuente según lo necesites */
+    margin-top: 30px; /* Espaciado superior */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.page-container > .content-wrapper h3 {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente para los subtítulos */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.page-container > .content-wrapper ul {
+    padding-left: 20px; /* Espacio a la izquierda para las listas */
+    margin-bottom: 15px; /* Espaciado inferior para las listas */
+}
+
+.page-container > .content-wrapper li {
+    line-height: 1.5; /* Espaciado entre líneas dentro de las listas */
 }

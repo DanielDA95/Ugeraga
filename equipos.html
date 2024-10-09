@@ -18,37 +18,42 @@
     <link rel="stylesheet" href="styles/media-queries.css">    
     <meta property="og:title" content="SD Ugeraga | Fútbol y Club Deportivo en Sopela">
     <meta property="og:description" content="Sigue la historia y próximos partidos del club SD Ugeraga en Sopela, Bizkaia.">
-    <meta property="og:image" content="https://www.sd-ugeraga.com/images/banner.jpg">
-    <meta property="og:url" content="https://www.sd-ugeraga.com">
+    <meta property="og:image" content="https://www.sdugeraga.es/images/banner.jpg">
+    <meta property="og:url" content="https://www.sdugeraga.es">
+    <meta name="description" content="Página oficial del club de fútbol SD Ugeraga. Encuentra información sobre nuestros equipos, historia, próximos partidos y cómo hacerte socio.">
+    <meta name="keywords" content="SD Ugeraga, fútbol, club de fútbol, Sopela, Bizkaia, equipos, historia, partidos, socios">
+    <link rel="icon" href="images/logos/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="navigation-wrapper">
+    <div class="navigation-wrapper" role="navigation" aria-label="Navegación principal"> <!-- Añadido role y aria-label para accesibilidad -->
         <div class="left-column">
             <div class="nombre_club">
                 <h1>Equipos</h1>
             </div>
         </div>
+        
         <div class="center-column">
             <div class="banner-image">
-                <img src="images/logos/logo.png" alt="Logo">
+                <img src="images/logos/logo.png" alt="Logo del club" loading="lazy"> <!-- Añadido loading="lazy" para optimizar carga -->
             </div>
         </div>
+    
         <div class="right-column">
             <div id="address-wrapper">
-                <a href="contacto.html">
+                <a href="contacto.html" aria-label="Ir a la página de contacto"> <!-- Añadido aria-label para accesibilidad -->
                     Gatzarriñe Kalea, 26D,
                     <br> 48600 Sopela, Bizkaia 
                 </a>
             </div>
             <div class="contact-icon">
-                <a href="contacto.html">
+                <a href="contacto.html" aria-label="Icono de ubicación"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
             </div>
         </div>
     </div>
-    <!-- Mover la button-column aquí, debajo del center-column -->
+    
     <div class="button-column">
         <div class="links-wrapper">
             <div class="nav-link">
@@ -69,45 +74,35 @@
         </div>
     </div>
     <!-- Menú de Categorías -->
-    <div class="links-wrapper2">
+    <div class="links-wrapper2" role="navigation" aria-label="Nuestras categorías">
         <div class="dropdown">
-            <button class="dropbtn">NUESTRAS CATEGORÍAS &nbsp ▽</button>
-            <div class="dropdown-content">
-                <a href="#" onclick="showCategory('regional-preferente')">Regional Preferente</a>
-                <a href="#" onclick="showCategory('segunda-regional')">2da Regional Grupo 1</a>
-                <a href="#" onclick="showCategory('regional-femenino')">1ra Regional Femenino</a>
-                <a href="#" onclick="showCategory('juvenil-preferente')">Juvenil Preferente</a>
-                <a href="#" onclick="showCategory('tercera-division')">3era División Regional</a>
-                <a href="#" onclick="showCategory('juvenil-primera')">1ra División Juvenil</a>
-                <a href="#" onclick="showCategory('preferente-cadete')">Preferente Cadete</a>
-                <a href="#" onclick="showCategory('segunda-cadete')">2da Cadete</a>
-                <a href="#" onclick="showCategory('segunda-cadete-femenino')">2da Cadete Femenino</a>
-                <a href="#" onclick="showCategory('liga-recreativa')">Liga Recreativa</a>
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">NUESTRAS CATEGORÍAS &nbsp; ▽</button>
+            <div class="dropdown-content" role="menu">
+                <a href="#" onclick="showCategory('regional-preferente')" role="menuitem">Regional Preferente</a>
+                <a href="#" onclick="showCategory('segunda-regional')" role="menuitem">2da Regional Grupo 1</a>
+                <a href="#" onclick="showCategory('regional-femenino')" role="menuitem">1ra Regional Femenino</a>
+                <a href="#" onclick="showCategory('juvenil-preferente')" role="menuitem">Juvenil Preferente</a>
+                <a href="#" onclick="showCategory('tercera-division')" role="menuitem">3era División Regional</a>
+                <a href="#" onclick="showCategory('juvenil-primera')" role="menuitem">1ra División Juvenil</a>
+                <a href="#" onclick="showCategory('preferente-cadete')" role="menuitem">Preferente Cadete</a>
+                <a href="#" onclick="showCategory('segunda-cadete')" role="menuitem">2da Cadete</a>
+                <a href="#" onclick="showCategory('segunda-cadete-femenino')" role="menuitem">2da Cadete Femenino</a>
+                <a href="#" onclick="showCategory('liga-recreativa')" role="menuitem">Liga Recreativa</a>
             </div>
         </div>
     </div>
     
     <!-- información de las categorías -->
-    <div id="content-container">
+    <div id="content-container" role="main">
         <div id="regional-preferente" class="category-content" style="display:none;">
             <h2>Regional Preferente</h2>
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                    <img src="images/teams/regional-preferente/regional-preferente.jpg alt="Equipo S.D Ugeraga 1">
-                    <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 2">
-                    <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 3">
-                    <img src="images/people/equipo3.jpg" alt="Equipo S.D Ugeraga 4">
-                    <img src="images/people/equipo4.jpg" alt="Equipo S.D Ugeraga 5">
-                </div>
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
-            </div>            
+            <img src="ruta-imagen.jpg" alt="Equipo Regional Preferente">
             <p>Información detallada sobre el equipo Regional Preferente.</p>
         </div>
 
         <div id="segunda-regional" class="category-content" style="display:none;">
             <h2>2da Regional Grupo 1</h2>
-            
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Regional Grupo 1">
             <p>Información detallada sobre el equipo de 2da Regional Grupo 1.</p>
         </div>
         <div id="tercera-division" class="category-content" style="display:none;">
@@ -117,58 +112,70 @@
         </div>
         <div id="regional-femenino" class="category-content" style="display:none;">
             <h2>Regional Femenino 1ra</h2>
-            
+            <img src="ruta-imagen.jpg" alt="Equipo Regional Femenino 1ra">
             <p>Información detallada sobre el equipo Regional Femenino 1ra.</p>
         </div>
         <div id="juvenil-preferente" class="category-content" style="display:none;">
             <h2>Juvenil Preferente</h2>
-            
+            <img src="ruta-imagen.jpg" alt="Equipo Juvenil Preferente">
             <p>Información detallada sobre el equipo Juvenil Preferente.</p>
-        </div>       
+        </div>
+        <div id="tercera-division" class="category-content" style="display:none;">
+            <h2>3era División Regional</h2>
+            <img src="ruta-imagen.jpg" alt="Equipo 3era División Regional">
+            <p>Información detallada sobre el equipo 3era División Regional.</p>
+        </div>
         <div id="juvenil-primera" class="category-content" style="display:none;">
             <h2>1ra División Juvenil</h2>
-            
+            <img src="ruta-imagen.jpg" alt="Equipo 1ra División Juvenil">
             <p>Información detallada sobre el equipo 1ra División Juvenil.</p>
         </div>
         <div id="preferente-cadete" class="category-content" style="display:none;">
             <h2>Preferente Cadete</h2>
-            
+            <img src="ruta-imagen.jpg" alt="Equipo Preferente Cadete">
             <p>Información detallada sobre el equipo Preferente Cadete.</p>
         </div>
-
+    
         <div id="segunda-cadete" class="category-content" style="display:none;">
             <h2>2da Cadete</h2>
-           
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Cadete">
             <p>Información detallada sobre el equipo 2da Cadete.</p>
         </div>
         <div id="segunda-cadete-femenino" class="category-content" style="display:none;">
             <h2>2da Cadete Femenino</h2>
-            
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Cadete Femenino">
             <p>Información detallada sobre el equipo 2da Cadete Femenino.</p>
         </div>
         <div id="liga-recreativa" class="category-content" style="display:none;">
             <h2>Liga Recreativa</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo Liga Recreativa">
+            <img src="ruta-imagen.jpg" alt="Equipo Liga Recreativa" loading="lazy">
             <p>Información detallada sobre el equipo Liga Recreativa.</p>
         </div>
-        <!-- Para añadir mas categorías -->
+        <!-- Para añadir más categorías -->
     </div>
     
-
     <!-- Carrusel de imágenes del equipo -->
-
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="images/people/equipo1.jpg" alt="Equipo S.D Ugeraga 1">
+            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 2">
+            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 3">
+            <img src="images/people/equipo3.jpg" alt="Equipo S.D Ugeraga 4">
+            <img src="images/people/equipo4.jpg" alt="Equipo S.D Ugeraga 5">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
 
      <!-- Descripcion equipos -->
 
 
     <div class="footer-structure-wrapper">
-            <div class="footer-image">
-                <img src="images/logos/logo.png" alt="Logo" height: 150px;> 
-            </div>
+        <div class="footer-image">
+            <img src="images/logos/logo.png" alt="Logo del club" loading="lazy"> <!-- Añadido loading="lazy" para optimizar carga -->
+        </div>
         <div class="contact-hours-wrapper">
-                <span class="hours">
-                <p> SD Ugeraga </p>
-                </span>
+            <p class="hours">SD Ugeraga</p>
         </div>
 
         <div class="links-wrapper-footer">
@@ -189,37 +196,33 @@
             </div>
         </div>
 
-        <div class="icons">
+        <div class="icons" role="contentinfo" aria-label="Redes sociales"> <!-- Añadido role y aria-label para accesibilidad -->
             <div class="instagram">
-                <a href="https://www.instagram.com/sdugeraga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <a href="https://www.instagram.com/sdugeraga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
             <div class="x-twitter">
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fx.com%2Fsdugeraga%3Fs%3D11%26t%3Dv0dyGxgcIqKsmU6NMo-3KA%26fbclid%3DPAZXh0bgNhZW0CMTEAAaYtpy11TyI_7ehbZolcejbb1XPPLMA0ZoPUrbVmgrccQh3DS8rmdyk9v7U_aem_conI_qykwiAwa6x944YKxw&e=AT0kexpRxjmkQiejEnwXaVCjxNxYjno9G7S9-x_bJBfpjPGjg1aWntpMhcpiCb0PatXuoFioi8HkqBT-tPnbXKovJGjDFXc-moRVMaI" target="_blank">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fx.com%2Fsdugeraga%3Fs%3D11%26t%3Dv0dyGxgcIqKsmU6NMo-3KA%26fbclid%3DPAZXh0bgNhZW0CMTEAAaYtpy11TyI_7ehbZolcejbb1XPPLMA0ZoPUrbVmgrccQh3DS8rmdyk9v7U_aem_conI_qykwiAwa6x944YKxw&e=AT0kexpRxjmkQiejEnwXaVCjxNxYjno9G7S9-x_bJBfpjPGjg1aWntpMhcpiCb0PatXuoFioi8HkqBT-tPnbXKovJGjDFXc-moRVMaI" target="_blank" aria-label="Twitter de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
             <div class="facebook">
-                <a href="https://www.facebook.com/groups/100079906883/" target="_blank">
+                <a href="https://www.facebook.com/groups/100079906883/" target="_blank" aria-label="Facebook de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
             <div class="Tik-Tok">
-                <a href="https://www.tiktok.com/@ugeraga?_t=8pAbxuQcNjl&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaaitP7oRWiYjMb1Y9qnlSZnaT0AImR512NHZ8zLkO_usaJNIBMhAb6v-Os_aem_bQvWaWfJTYcBcifmsmH9Jg" target="_blank">
+                <a href="https://www.tiktok.com/@ugeraga?_t=8pAbxuQcNjl&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaaitP7oRWiYjMb1Y9qnlSZnaT0AImR512NHZ8zLkO_usaJNIBMhAb6v-Os_aem_bQvWaWfJTYcBcifmsmH9Jg" target="_blank" aria-label="TikTok de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
             </div>
         </div>
-        
         
         <div class="copyright-wrapper">
             &copy; 2024 Página hecha por Carlos y Daniel &#124; Todos los derechos reservados 
         </div>
 
     </div>
-
-</div>
-
 </body>
 </html>
