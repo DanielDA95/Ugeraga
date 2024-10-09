@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e3ead3d2a4.js" crossorigin="anonymous"></script>
     <script src="scripts/scripts.js"></script>
-    <link rel="stylesheet"  href="styles/common.css">
-    <link rel="stylesheet"  href="styles/nav.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/skewed-header.css">
     <link rel="stylesheet" href="styles/square-grid.css">
@@ -96,48 +96,54 @@
     <div id="content-container" role="main">
         <div id="regional-preferente" class="category-content" style="display:none;">
             <h2>Regional Preferente</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo Regional Preferente" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo Regional Preferente">
             <p>Información detallada sobre el equipo Regional Preferente.</p>
         </div>
+
         <div id="segunda-regional" class="category-content" style="display:none;">
             <h2>2da Regional Grupo 1</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo 2da Regional Grupo 1" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Regional Grupo 1">
             <p>Información detallada sobre el equipo de 2da Regional Grupo 1.</p>
+        </div>
+        <div id="tercera-division" class="category-content" style="display:none;">
+            <h2>3era División Regional</h2>
+            
+            <p>Información detallada sobre el equipo 3era División Regional.</p>
         </div>
         <div id="regional-femenino" class="category-content" style="display:none;">
             <h2>Regional Femenino 1ra</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo Regional Femenino 1ra" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo Regional Femenino 1ra">
             <p>Información detallada sobre el equipo Regional Femenino 1ra.</p>
         </div>
         <div id="juvenil-preferente" class="category-content" style="display:none;">
             <h2>Juvenil Preferente</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo Juvenil Preferente" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo Juvenil Preferente">
             <p>Información detallada sobre el equipo Juvenil Preferente.</p>
         </div>
         <div id="tercera-division" class="category-content" style="display:none;">
             <h2>3era División Regional</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo 3era División Regional" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo 3era División Regional">
             <p>Información detallada sobre el equipo 3era División Regional.</p>
         </div>
         <div id="juvenil-primera" class="category-content" style="display:none;">
             <h2>1ra División Juvenil</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo 1ra División Juvenil" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo 1ra División Juvenil">
             <p>Información detallada sobre el equipo 1ra División Juvenil.</p>
         </div>
         <div id="preferente-cadete" class="category-content" style="display:none;">
             <h2>Preferente Cadete</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo Preferente Cadete" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo Preferente Cadete">
             <p>Información detallada sobre el equipo Preferente Cadete.</p>
         </div>
     
         <div id="segunda-cadete" class="category-content" style="display:none;">
             <h2>2da Cadete</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo 2da Cadete" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Cadete">
             <p>Información detallada sobre el equipo 2da Cadete.</p>
         </div>
         <div id="segunda-cadete-femenino" class="category-content" style="display:none;">
             <h2>2da Cadete Femenino</h2>
-            <img src="ruta-imagen.jpg" alt="Equipo 2da Cadete Femenino" loading="lazy">
+            <img src="ruta-imagen.jpg" alt="Equipo 2da Cadete Femenino">
             <p>Información detallada sobre el equipo 2da Cadete Femenino.</p>
         </div>
         <div id="liga-recreativa" class="category-content" style="display:none;">
@@ -149,18 +155,17 @@
     </div>
     
     <!-- Carrusel de imágenes del equipo -->
-    <div class="carousel-container" role="region" aria-label="Carrusel de imágenes del equipo">
-        <div class="carousel-slide" role="group">
-            <img src="images/people/equipo1.jpg" alt="Equipo S.D Ugeraga 1" loading="lazy">
-            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 2" loading="lazy">
-            <img src="images/people/equipo3.jpg" alt="Equipo S.D Ugeraga 3" loading="lazy">
-            <img src="images/people/equipo4.jpg" alt="Equipo S.D Ugeraga 4" loading="lazy">
-            <img src="images/people/equipo5.jpg" alt="Equipo S.D Ugeraga 5" loading="lazy">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="images/people/equipo1.jpg" alt="Equipo S.D Ugeraga 1">
+            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 2">
+            <img src="images/people/equipo2.jpg" alt="Equipo S.D Ugeraga 3">
+            <img src="images/people/equipo3.jpg" alt="Equipo S.D Ugeraga 4">
+            <img src="images/people/equipo4.jpg" alt="Equipo S.D Ugeraga 5">
         </div>
-        <button class="prev" onclick="moveSlide(-1)" aria-label="Slide anterior">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)" aria-label="Siguiente slide">&#10095;</button>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
-    
 
      <!-- Descripcion equipos -->
 

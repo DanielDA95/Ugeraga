@@ -3,9 +3,20 @@ let currentSlide = 0;
 function moveSlide(n) {
     const slides = document.querySelector('.carousel-slide');
     const totalSlides = slides.children.length;
-    currentSlide = (currentSlide + n + totalSlides) % totalSlides;
+
+    // Si n es 1 (avanzar) y no estamos en la última imagen
+    if (n === 1 && currentSlide < totalSlides - 1) {
+        currentSlide++;
+    }
+    // Si n es -1 (retroceder) y no estamos en la primera imagen
+    else if (n === -1 && currentSlide > 0) {
+        currentSlide--;
+    }
+
+    // Desplaza el carrusel a la imagen actual
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
 
 function showCategory(categoryId) {
     // Oculta todas las secciones
