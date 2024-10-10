@@ -59,3 +59,9 @@ function closeModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
 }
+// Añadir accesibilidad para cerrar modales con "Esc"
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
