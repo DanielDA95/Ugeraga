@@ -10,7 +10,7 @@
 
 #content-container {
     width: 100%;
-    max-width: 1200px; /* Ajusta según el diseño general de la página */
+    max-width: 1000px; /* Ajusta según el diseño general de la página */
     margin: 0 auto; /* Centra el contenedor en la página */
     padding: 20px; /* Espacio interno para separar del borde */
     box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total del contenedor */
