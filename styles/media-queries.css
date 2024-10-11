@@ -1,45 +1,98 @@
-@media (max-width:615px) { 
+@media (max-width: 615px) { 
     .hero-section {
         padding: 50px 10px;
     }
-    .features-section {
+    .features-section, .footer-structure-wrapper {
         height: 100%;
     }
-    .features-section > .columns-wrapper{
+    .features-section > .columns-wrapper, .contact-grid-wrapper {
         width: 100%;
         flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
-    .footer-structure-wrapper {
-        height: 100%;
-    }
-
     .page-container {
-        padding-left: 21px;
-        padding-right: 21px;
+        padding: 0 21px;
     }
     .content-wrapper > #history {
-        margin: 10px 10px 0px 0px !important; 
+        margin: 10px 10px 0 0 !important; 
     }
     .square {
         grid-template-columns: 1fr !important;
     }
-
     .square > .img-wrapper {
         order: 1;
     }
     .square > .square-text-wrapper {
         order: 2;
     }
-   
-    .contact-grid-wrapper {
+    .form input, .form textarea {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-wrapper, .links-wrapper, .links-wrapper-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .left-column, .center-column, .right-column, .button-column {
+        flex: 1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .nav-link {
+        margin: 10px 0; 
+    }
+    .right-column {
+        text-align: center;
+    }
+    #address-wrapper {
+        font-size: 14px;
+    }
+    .icons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .page-container {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+    .company-metadata-sidebar-wrapper {
+        order: 1; /* Información de la empresa primero */
+    }
+    .mapa {
+        order: 2; /* Mapa después de la información */
         width: 100%;
+        padding: 15px;
+        height: 300px; /* Altura ajustada en pantallas más pequeñas */
+    }
+    .mapa iframe {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-image img {
+        max-width: 100px;
+    }
+    .nav-link a, .contact-icon a {
+        font-size: 14px; 
+    }
+    #address-wrapper {
+        font-size: 12px; 
+    }
+    .company-details-wrapper i {
+        font-size: 1.2em;
+    }
+    .company-details-wrapper div {
+        font-size: 14px;
+    }
+    .mapa {
+        height: 250px; /* Ajuste de la altura del mapa para móviles */
+    }
+    .links-wrapper-footer {
         grid-template-columns: 1fr;
-        grid-gap: 10px; 
-    }
-    .form input {
-        padding: 1.5rem 0rem;
-    }
-    .form textarea {
-        padding: 1.5rem 0rem;
+        gap: 15px;
     }
 }
