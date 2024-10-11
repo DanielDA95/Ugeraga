@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://www.sdugeraga.es/</loc>
+      <lastmod>2024-10-11</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://www.sdugeraga.es/historia.html</loc>
+      <lastmod>2024-10-11</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.1</priority>
+   </url>
+   <url>
+      <loc>https://www.sdugeraga.es/equipos.html</loc>
+      <lastmod>2024-10-11</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://www.sdugeraga.es/directivos.html</loc>
+      <lastmod>2024-10-11</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.1</priority>
+   </url>
+   <url>
+      <loc>https://www.sdugeraga.es/contacto.html</loc>
+      <lastmod>2024-10-11</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+</urlset>
