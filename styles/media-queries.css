@@ -40,7 +40,6 @@
     }
     .left-column, .center-column, .right-column, .button-column {
         flex: 1;
-        margin-bottom: 20px;
         text-align: center;
     }
     .nav-link {
