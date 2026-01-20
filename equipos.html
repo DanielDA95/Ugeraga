@@ -2,332 +2,160 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>SD Ugeraga | Equipos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Ugeraga | Nuestros Equipos</title>
+    
+    <meta name="description" content="Conoce todas las categorías de la SD Ugeraga: Regional, Juvenil, Cadete y Femenino. Plantillas y resultados.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e3ead3d2a4.js" crossorigin="anonymous"></script>
-    <script src="scripts/scripts.js"></script>
+
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/square-grid.css">
-    <link rel="stylesheet" href="styles/helpers.css">
-    <link rel="stylesheet" href="styles/media-queries.css">
-    <link rel="stylesheet" href="styles/homepage.css">
-    <meta property="og:title" content="SD Ugeraga | Fútbol y Club Deportivo en Sopela">
-    <meta property="og:description" content="Sigue la historia y próximos partidos del club SD Ugeraga en Sopela, Bizkaia.">
-    <meta property="og:image" content="https://www.sdugeraga.es/images/banner.jpg">
-    <meta property="og:url" content="https://www.sdugeraga.es">
-    <meta name="description" content="Página oficial del club de fútbol SD Ugeraga. Encuentra información sobre nuestros equipos, historia, próximos partidos y cómo hacerte socio.">
-    <meta name="keywords" content="SD Ugeraga, fútbol, club de fútbol, Sopela, Bizkaia, equipos, historia, partidos, socios">
+    <link rel="stylesheet" href="styles/homepage.css"> <link rel="stylesheet" href="styles/media-queries.css">
+    
     <link rel="icon" href="images/logos/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="navigation-wrapper" role="navigation" aria-label="Navegación principal"> <!-- Añadido role y aria-label para accesibilidad -->
+
+    <header class="navigation-wrapper" aria-label="Cabecera principal">
         <div class="left-column">
             <div class="nombre_club">
-                <h1>Equipos</h1>
+                <h1>SD Ugeraga</h1>
             </div>
         </div>
         
         <div class="center-column">
             <div class="banner-image">
-                <img src="images/logos/logo.png" alt="Logo del club" loading="lazy"> <!-- Añadido loading="lazy" para optimizar carga -->
+                <img src="images/logos/logo.png" alt="Escudo de la SD Ugeraga" width="150" height="150">
             </div>
         </div>
     
         <div class="right-column">
-            <div id="address-wrapper">
-                <a href="contacto.html" aria-label="Ir a la página de contacto"> <!-- Añadido aria-label para accesibilidad -->
-                    Gatzarriñe Kalea, 26D,
-                    <br> 48600 Sopela, Bizkaia 
-                </a>
-            </div>
+            <address id="address-wrapper">
+                <a href="contacto.html">Gatzarriñe Kalea, 26D,<br> 48600 Sopela, Bizkaia</a>
+            </address>
             <div class="contact-icon">
-                <a href="contacto.html" aria-label="Icono de ubicación"> <!-- Añadido aria-label para accesibilidad -->
-                    <i class="fa-solid fa-location-dot"></i>
-                </a>
+                <a href="contacto.html"><i class="fa-solid fa-location-dot"></i></a>
             </div>
         </div>
-    </div>
+    </header>
     
-    <div class="button-column">
-        <div class="links-wrapper">
-            <div class="nav-link">
-                <a href="index.html">Inicio</a>
-            </div>
-            <div class="nav-link">
-                <a href="historia.html">Historia</a>
-            </div>
-            <div class="nav-link">
-                <a href="equipos.html">Equipos</a>
-            </div>
-            <div class="nav-link">
-                <a href="directivos.html">Directivos</a>
-            </div>
-            <div class="nav-link">
-                <a href="contacto.html">Contacto</a>
-            </div>
-        </div>
-    </div>
-    <!-- Menú de Categorías -->
-    <div class="links-wrapper2" role="navigation" aria-label="Nuestras categorías">
-        <div class="dropdown">
-            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">NUESTRAS CATEGORÍAS &nbsp; ▽</button>
-            <div class="dropdown-content" role="menu">
-                <a href="#" onclick="showCategory('regional-preferente')" role="menuitem">Regional Preferente</a>
-                <a href="#" onclick="showCategory('segunda-regional')" role="menuitem">Segunda Regional, Grupo 1</a>
-                <a href="#" onclick="showCategory('tercera-division')" role="menuitem">Tercera División Regional</a>
-                <a href="#" onclick="showCategory('regional-femenino')" role="menuitem">Primera Regional Femenino</a>
-                <a href="#" onclick="showCategory('juvenil-preferente')" role="menuitem">Juvenil Preferente, Grupo 1</a>                
-                <a href="#" onclick="showCategory('juvenil-primera')" role="menuitem">Primera División Juvenil, Grupo 3</a>
-                <a href="#" onclick="showCategory('preferente-cadete')" role="menuitem">Preferente Cadete, Grupo 1</a>
-                <a href="#" onclick="showCategory('segunda-cadete')" role="menuitem">Segunda División Cadete, Grupo 4</a>
-                <a href="#" onclick="showCategory('segunda-cadete-femenino')" role="menuitem">Segunda División Cadete Femenino, Grupo 1</a>
-                <a href="#" onclick="showCategory('liga-recreativa')" role="menuitem">Liga Recreativa</a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- información de las categorías -->
-    <div id="content-container" role="main">
-        <div id="regional-preferente" class="category-content" style="display:none;">
-            <h2>Regional Preferente</h2>
-            <div class="carousel-container" id="carousel1">
-                <div class="carousel-slide">
-                    <img src="images/teams/regional-preferente/regional-preferente.jpg" alt="Equipo S.D Ugeraga 1">
-                    <img src="images/teams/regional-preferente/regional-preferente1.jpg" alt="Equipo S.D Ugeraga 2">
-                    <img src="images/teams/regional-preferente/regional-preferente2.jpg" alt="Equipo S.D Ugeraga 3">
-                    <img src="images/teams/regional-preferente/regional-preferente3.jpg" alt="Equipo S.D Ugeraga 4">
-                    <img src="images/teams/regional-preferente/regional-preferente4.jpg" alt="Equipo S.D Ugeraga 5">
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel1')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel1')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1894454&codgrupo=1923374&CodJornada=7" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div>    
-        </div>
- 
-        <div id="segunda-regional" class="category-content" style="display:none;">
-            <h2>2da Regional, Grupo 1</h2>
-            <div class="carousel-container" id="carousel2">
-                <div class="carousel-slide">
-                    <img src="images/teams/segunda-regional/segunda-regional0.jpg" alt="Equipo S.D Ugeraga 1">
-                    <img src="images/teams/segunda-regional/segunda-regional1.jpg" alt="Equipo S.D Ugeraga 2">
-                    <img src="images/teams/segunda-regional/segunda-regional2.jpg" alt="Equipo S.D Ugeraga 3">
-                    <img src="images/teams/segunda-regional/segunda-regional3.jpg" alt="Equipo S.D Ugeraga 4">
-                    <img src="images/teams/segunda-regional/segunda-regional4.jpg" alt="Equipo S.D Ugeraga 5">
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel2')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel2')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1896868&codgrupo=1923486&CodJornada=3" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div>              
-        </div>
-        <div id="regional-femenino" class="category-content" style="display:none;">
-            <h2>Regional Femenino 1ra</h2>
-            <div class="carousel-container" id="carousel4">
-                <div class="carousel-slide">
-                    <img src="images/teams/regional-femenino/regional-femenino0.jpg" alt="Equipo S.D Ugeraga 1">
-                    <img src="images/teams/regional-femenino/regional-femenino1.JPG" alt="Equipo S.D Ugeraga 2">
-                    <img src="images/teams/regional-femenino/regional-femenino2.JPG" alt="Equipo S.D Ugeraga 3">
-                    <img src="images/teams/regional-femenino/regional-femenino3.JPG" alt="Equipo S.D Ugeraga 4">
-                    <img src="images/teams/regional-femenino/regional-femenino4.JPG" alt="Equipo S.D Ugeraga 5">
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel4')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel4')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1811512&codgrupo=2130394&CodJornada=1" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div>  
-        </div>
-        <div id="tercera-division" class="category-content" style="display:none;">
-            <h2>3era División Regional</h2>
-            <div class="carousel-container" id="carousel3">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">                    
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel3')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel3')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1896971&codgrupo=1923828&CodJornada=3" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div>  
-        </div>
-        <div id="juvenil-preferente" class="category-content" style="display:none;">
-            <h2>Juvenil Preferente, Grupo 1</h2>
-            <div class="carousel-container" id="carousel5">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel5')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel5')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1897608&codgrupo=1938815&CodJornada=1" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div> 
-        </div>
-        <div id="juvenil-primera" class="category-content" style="display:none;">
-            <h2>Primera División Juvenil, Grupo 3</h2>
-            <div class="carousel-container" id="carousel6">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">
-                </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel6')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel6')">&#10095;</button>
-            </div>       
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1897628&codgrupo=1938953&CodJornada=1" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div> 
-        </div>
+    <nav class="button-column" aria-label="Menú principal">
+        <ul class="links-wrapper">
+            <li class="nav-link"><a href="index.html">Inicio</a></li>
+            <li class="nav-link"><a href="historia.html">Historia</a></li>
+            <li class="nav-link"><a href="equipos.html" aria-current="page">Equipos</a></li>
+            <li class="nav-link"><a href="directivos.html">Directivos</a></li>
+            <li class="nav-link"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
         
-        <div id="preferente-cadete" class="category-content" style="display:none;">
-            <h2>Preferente Cadete, Grupo 1</h2>
-            <div class="carousel-container" id="carousel7">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">
+        <nav class="links-wrapper2" aria-label="Selector de categorías">
+            <div class="dropdown">
+                <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                    SELECCIONAR CATEGORÍA &nbsp; <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content" role="menu">
+                    <a href="javascript:void(0)" onclick="showCategory('regional-preferente')" role="menuitem">Regional Preferente</a>
+                    <a href="javascript:void(0)" onclick="showCategory('segunda-regional')" role="menuitem">2da Regional</a>
+                    <a href="javascript:void(0)" onclick="showCategory('tercera-division')" role="menuitem">3era División</a>
+                    <a href="javascript:void(0)" onclick="showCategory('regional-femenino')" role="menuitem">Regional Femenino</a>
+                    <a href="javascript:void(0)" onclick="showCategory('juvenil-preferente')" role="menuitem">Juvenil Preferente</a>                
+                    <a href="javascript:void(0)" onclick="showCategory('juvenil-primera')" role="menuitem">1ra Juvenil</a>
+                    <a href="javascript:void(0)" onclick="showCategory('preferente-cadete')" role="menuitem">Preferente Cadete</a>
+                    <a href="javascript:void(0)" onclick="showCategory('segunda-cadete')" role="menuitem">2da Cadete</a>
+                    <a href="javascript:void(0)" onclick="showCategory('segunda-cadete-femenino')" role="menuitem">2da Cadete Femenino</a>
+                    <a href="javascript:void(0)" onclick="showCategory('liga-recreativa')" role="menuitem">Liga Recreativa</a>
                 </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel7')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel7')">&#10095;</button>
-            </div>            
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1909967&codgrupo=1939128&CodJornada=1" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div> 
-        </div>
+            </div>
+        </nav>
+        
+        <section id="content-container" class="teams-container">
+            
+            <article id="regional-preferente" class="category-content"> <div class="category-header">
+                    <h2>Regional Preferente</h2>
+                </div>
+                
+                <div class="carousel-container" id="carousel1">
+                    <div class="carousel-slide">
+                        <img src="images/teams/regional-preferente/regional-preferente.jpg" alt="Plantilla Regional Preferente - Foto 1" loading="lazy">
+                        <img src="images/teams/regional-preferente/regional-preferente1.jpg" alt="Plantilla Regional Preferente - Foto 2" loading="lazy">
+                        </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel1')" aria-label="Imagen anterior">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel1')" aria-label="Siguiente imagen">&#10095;</button>
+                </div>
+
+                <div class="news-item">
+                    <h3>Resultados y Clasificación</h3>
+                    <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1894454&codgrupo=1923374&CodJornada=7" target="_blank" rel="noopener noreferrer" class="standings-link">
+                        Ver Tabla en FVF <i class="fa-solid fa-arrow-pointer"></i>
+                    </a>
+                </div>    
+            </article>
     
-        <div id="segunda-cadete" class="category-content" style="display:none;">
-            <h2>Segunda División Cadete, Grupo 4</h2>
-            <div class="carousel-container" id="carousel8">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">
+            <article id="segunda-regional" class="category-content" style="display:none;">
+                <div class="category-header">
+                    <h2>2da Regional, Grupo 1</h2>
                 </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel8')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel8')">&#10095;</button>
-            </div>               
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1910004&codgrupo=1939224&CodJornada=1" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div> 
-        </div>
-
-        <div id="segunda-cadete-femenino" class="category-content" style="display:none;">
-            <h2>Segunda División Cadete Femenino, Grupo 1</h2>
-            <div class="carousel-container" id="carousel9">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">
+                <div class="carousel-container" id="carousel2">
+                    <div class="carousel-slide">
+                        <img src="images/teams/segunda-regional/segunda-regional0.jpg" alt="Plantilla 2da Regional" loading="lazy">
+                        </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel2')">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel2')">&#10095;</button>
                 </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel9')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel9')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="https://www.fvf-bff.eus/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=20&codcompeticion=1837479&codgrupo=21893408&CodJornada=1" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div> 
-        </div>
+                <div class="news-item">
+                    <h3>Resultados y Clasificación</h3>
+                    <a href="LINK_DE_LA_FEDERACION" target="_blank" rel="noopener noreferrer" class="standings-link">
+                        Ver Tabla en FVF <i class="fa-solid fa-arrow-pointer"></i>
+                    </a>
+                </div>              
+            </article>
 
-        <div id="liga-recreativa" class="category-content" style="display:none;">
-            <h2>Liga Recreativa</h2>
-            <div class="carousel-container" id="carousel10">
-                <div class="carousel-slide">
-                    <img src="images/logos/logo2.png" alt="Equipo S.D Ugeraga 1">
+            </section>
+
+        <section class="gallery-section">
+            <h2 class="gallery-title">Galería de Temporada</h2>
+            <div class="gallery-wrapper">
+                <div class="gallery-item"><img src="images/teams/carusel_2_equipos/1.jpg" class="gallery-image" alt="Partido" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/teams/carusel_2_equipos/3.jpg" class="gallery-image" alt="Entrenamiento" loading="lazy"></div>
                 </div>
-                <button class="prev" onclick="moveSlide(-1, 'carousel10')">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 'carousel10')">&#10095;</button>
-            </div>
-            <div class="news-item">
-                <h3>Consulta la tabla de posiciones y resultados en el siguiente enlace:</h3>
-                <a href="" target="_blank" class="standings-link" aria-label="Tabla de Posiciones de la Federación Vizcaína de Fútbol">Tabla de Posiciones de la Federación Vizcaína de Fútbol &nbsp; <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i></a> <!-- Añadido aria-label y aria-hidden -->
-            </div> 
-        </div>
-        <!-- Para añadir más categorías -->
-    </div>
+        </section>
 
-    <div class="gallery-section">
-        <h1 class="gallery-title">Galería de Imágenes</h1>
-        <div class="gallery-wrapper">
-            <div class="gallery-item">
-                <img src="images/teams/carusel_2_equipos/1.jpg" alt="" class="gallery-image"  loading="lazy"> <!-- Añadido texto alternativo descriptivo -->
-            </div>
-            <div class="gallery-item">
-                <img src="images/teams/carusel_2_equipos/3.jpg" alt="" class="gallery-image"  loading="lazy"> <!-- Añadido texto alternativo descriptivo -->
-            </div>
-            <div class="gallery-item">
-                <img src="images/teams/carusel_2_equipos/regional-femenino3.JPG" alt="" class="gallery-image" loading="lazy"> <!-- Añadido texto alternativo descriptivo -->
-            </div>
-            <div class="gallery-item">
-                <img src="images/teams/carusel_2_equipos/7.jpg" alt="" class="gallery-image" loading="lazy"> <!-- Añadido texto alternativo descriptivo -->
-            </div>
-            <div class="gallery-item">
-                <img src="images/teams/carusel_2_equipos/10.jpg" alt="" class="gallery-image" loading="lazy"> <!-- Añadido texto alternativo descriptivo -->
-            </div>
-        </div>
-    </div>
+    </main>
 
-    <div class="footer-structure-wrapper">
+    <footer class="footer-structure-wrapper">
         <div class="footer-image">
-            <img src="images/logos/logo.png" alt="Logo del club" loading="lazy"> <!-- Añadido loading="lazy" para optimizar carga -->
+            <img src="images/logos/logo.png" alt="Logo SD Ugeraga" loading="lazy">
         </div>
         <div class="contact-hours-wrapper">
-            <p class="hours">SD Ugeraga</p>
+            <p class="hours"><strong>SD Ugeraga</strong></p>
         </div>
-
-        <div class="links-wrapper-footer">
-            <div class="nav-link">
-                <a href="index.html">Inicio</a>
-            </div>
-            <div class="nav-link">
-                <a href="historia.html">Historia</a>
-            </div>
-            <div class="nav-link">
-                <a href="equipos.html">Equipos</a>
-            </div>
-            <div class="nav-link">
-                <a href="directivos.html">Directivos</a>
-            </div>
-            <div class="nav-link">
-                <a href="contacto.html">Contacto</a>
-            </div>
+        <nav class="links-wrapper-footer" aria-label="Menú pie de página">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="historia.html" class="nav-link">Historia</a>
+            <a href="equipos.html" class="nav-link">Equipos</a>
+            <a href="directivos.html" class="nav-link">Directivos</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="icons" aria-label="Redes sociales">
+            <div class="instagram"><a href="https://www.instagram.com/sdugeraga" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="x-twitter"><a href="https://x.com/sdugeraga" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div>
+            <div class="facebook"><a href="https://www.facebook.com/groups/100079906883/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="Tik-Tok"><a href="https://www.tiktok.com/@ugeraga" target="_blank"><i class="fa-brands fa-tiktok"></i></a></div>
         </div>
-
-        <div class="icons" role="contentinfo" aria-label="Redes sociales"> <!-- Añadido role y aria-label para accesibilidad -->
-            <div class="instagram">
-                <a href="https://www.instagram.com/sdugeraga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-            <div class="x-twitter">
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fx.com%2Fsdugeraga%3Fs%3D11%26t%3Dv0dyGxgcIqKsmU6NMo-3KA%26fbclid%3DPAZXh0bgNhZW0CMTEAAaYtpy11TyI_7ehbZolcejbb1XPPLMA0ZoPUrbVmgrccQh3DS8rmdyk9v7U_aem_conI_qykwiAwa6x944YKxw&e=AT0kexpRxjmkQiejEnwXaVCjxNxYjno9G7S9-x_bJBfpjPGjg1aWntpMhcpiCb0PatXuoFioi8HkqBT-tPnbXKovJGjDFXc-moRVMaI" target="_blank" aria-label="Twitter de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
-            <div class="facebook">
-                <a href="https://www.facebook.com/groups/100079906883/" target="_blank" aria-label="Facebook de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div>
-            <div class="Tik-Tok">
-                <a href="https://www.tiktok.com/@ugeraga?_t=8pAbxuQcNjl&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaaitP7oRWiYjMb1Y9qnlSZnaT0AImR512NHZ8zLkO_usaJNIBMhAb6v-Os_aem_bQvWaWfJTYcBcifmsmH9Jg" target="_blank" aria-label="TikTok de SD Ugeraga"> <!-- Añadido aria-label para accesibilidad -->
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-            </div>
-        </div>
-        
         <div class="copyright-wrapper">
-            &copy; 2024 Página hecha por Carlos y Daniel &#124; Todos los derechos reservados 
+            <small>&copy; 2024 SD Ugeraga. Desarrollado por Carlos y Daniel.</small>
         </div>
+    </footer>
 
-    </div>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
