@@ -1,14 +1,14 @@
 .footer-structure-wrapper {
-    background-color: #09386f;
-    color: #cbcbcb;
-    font-family: 'Lato', sans-serif;
+    background-color: var(--primary-blue);
+    color: var(--text-grey);
+    font-family: var(--font-main);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     text-align: center;
-    padding: 50px 0;
-    margin-top: -4px; 
+    padding: 50px 20px; /* Añadido padding lateral para móviles */
+    margin-top: -4px; /* Mantenemos tu ajuste temporalmente */
 }
 
 .footer-image img {
@@ -19,52 +19,55 @@
 
 .contact-hours-wrapper .hours {
     font-size: 1.2em;
-    color: #cbcbcb;
+    color: var(--text-grey);
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-
+/* Enlaces del Footer */
 .links-wrapper-footer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    display: flex; /* Cambiado a Flex para mejor centrado automático */
+    flex-wrap: wrap; /* Si no caben, bajan a la siguiente línea */
+    justify-content: center;
+    gap: 20px;
     margin: 20px 0;
     width: 100%;
-    max-width: 600px; 
+    max-width: 800px; 
 }
 
 .links-wrapper-footer a {
-    color: #cbcbcb;
+    color: var(--text-grey);
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .links-wrapper-footer a:hover {
-    color: #E6D847;
+    color: var(--accent-gold);
     transform: scale(1.1);
 }
 
-
+/* Redes Sociales */
 .icons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex; /* Flex es más seguro que grid aquí */
+    justify-content: center;
     gap: 30px; 
     margin: 20px 0;
 }
 
 .icons i {
     font-size: 1.5em;
-    color: #cbcbcb;
+    color: var(--text-grey);
     transition: color 0.3s ease;
 }
 
 .icons i:hover {
-    color: #E6D847;
+    color: var(--accent-gold);
+    transform: translateY(-3px); /* Pequeño salto al pasar el ratón */
 }
 
 .copyright-wrapper {
     font-size: 0.8em;
-    color: #858585;
+    color: #858585; /* Este gris es específico, lo dejamos así o creamos variable */
     margin-top: 20px;
 }
-
