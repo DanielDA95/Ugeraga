@@ -1,65 +1,62 @@
 # ⚽ SD Ugeraga - Official Web Portal (Legacy Version)
 
-> **Portal web informativo para el club deportivo SD Ugeraga (Sopela, Bizkaia).**
-> *Proyecto desarrollado como parte del Certificado de Profesionalidad en Confección y Publicación de Páginas Web.*
+> **Portal web oficial desarrollado para el club deportivo SD Ugeraga (Sopela, Bizkaia).**
+> *Proyecto real desarrollado durante el periodo de **Prácticas Profesionales en Empresa** para la obtención del Certificado de Profesionalidad en Confección y Publicación de Páginas Web.*
 
-![Project Status](https://img.shields.io/badge/Status-Refactored-success)
-![Legacy](https://img.shields.io/badge/Version-Legacy_HTML%2FCSS-orange)
+![Project Type](https://img.shields.io/badge/Project-Professional_Internship-blue)
+![Status](https://img.shields.io/badge/Status-Production_Ready_Prototype-success)
+![Legacy](https://img.shields.io/badge/Stack-Vanilla_HTML%2FCSS%2FJS-orange)
 
-## 📖 Descripción del Proyecto
+## 💼 Contexto del Proyecto
 
-Este proyecto nació con el objetivo de digitalizar la presencia del club de fútbol **SD Ugeraga**, centralizando la información sobre sus equipos, historia, directiva y contacto.
+Este desarrollo fue realizado en un entorno empresarial real como parte de las prácticas exigidas para la certificación profesional. El objetivo fue responder a una necesidad de negocio real: la digitalización de la presencia del **SD Ugeraga**, centralizando la información de sus equipos, categorías, historia y canales de comunicación.
 
-Aunque originalmente fue concebido como un ejercicio académico para la obtención de un certificado profesional, el código ha sido **auditado y refactorizado** siguiendo estándares modernos de desarrollo web, priorizando la semántica, la accesibilidad y la separación de responsabilidades antes de su migración a una arquitectura de componentes (React).
+A diferencia de un ejercicio académico, este proyecto implicó:
+* Análisis de requisitos de un cliente real.
+* Adaptación a la identidad corporativa del club.
+* Desarrollo de una arquitectura escalable sin dependencias externas.
 
 ---
 
 ## 🛠️ Stack Tecnológico & Arquitectura
 
-El proyecto está construido sin dependencias externas pesadas (Vanilla), enfocado en el rendimiento y los fundamentos de la ingeniería web:
+El proyecto se construyó sobre un stack "Vanilla" (sin frameworks) para garantizar el máximo rendimiento, control total del código y compatibilidad universal, sentando una base sólida de ingeniería web:
 
 | Tecnología | Uso en el proyecto |
 | :--- | :--- |
-| **HTML5 Semántico** | Estructura basada en `header`, `nav`, `main`, `article` y `footer` para SEO y accesibilidad. |
-| **CSS3 Moderno** | Uso de **Variables CSS (Custom Properties)**, Flexbox y CSS Grid. Diseño **Mobile-First**. |
-| **JavaScript (ES6+)** | Lógica del DOM separada de la vista. Manejo de eventos y manipulación de clases sin `onclick` en línea. |
-| **Google Maps Embed** | Integración de iframes responsive para geolocalización. |
+| **HTML5 Semántico** | Estructura optimizada para SEO (`header`, `nav`, `article`) y Accesibilidad (WAI-ARIA). |
+| **CSS3 Moderno** | Arquitectura mantenible con **Variables CSS**, Grid y Flexbox. Diseño 100% **Mobile-First**. |
+| **JavaScript (ES6+)** | Lógica de negocio en el cliente, manipulación del DOM y componentes interactivos personalizados. |
+| **Integraciones** | Google Maps Embed API para geolocalización de las instalaciones. |
 
 ---
 
-## ✨ Características Técnicas Destacadas
+## ✨ Soluciones Técnicas Implementadas
 
-Este no es solo un sitio estático; es una demostración de **"Code Hygiene"** (Higiene de Código):
+Se desarrollaron componentes personalizados para resolver las necesidades del cliente sin recurrir a librerías pesadas:
 
-1.  **Arquitectura CSS Escalable:**
-    * Uso de un archivo `variables.css` para centralizar la paleta de colores (`--primary-blue`, `--accent-gold`) y tipografías.
-    * Separación de estilos por responsabilidad (`nav.css`, `footer.css`, `media-queries.css`).
-2.  **Accesibilidad (a11y):**
-    * Navegación compatible con lectores de pantalla (`aria-label`, roles semánticos).
-    * Textos alternativos (`alt`) descriptivos en todas las imágenes.
-3.  **Optimización:**
-    * Carga diferida de imágenes y mapas (`loading="lazy"`).
-    * Eliminación de estilos en línea y scripts bloqueantes.
-4.  **Componentes UI (Vanilla):**
-    * **Carrusel de Imágenes:** Lógica personalizada en JS puro para visualizar las plantillas.
-    * **Galería Modal:** Visor de imágenes tipo "Lightbox".
-    * **Selector de Categorías:** Filtrado dinámico de equipos sin recarga de página.
+1.  **Sistema de Carrusel Personalizado:** Lógica JavaScript propia para la visualización de las plantillas de jugadores por categoría.
+2.  **Filtrado Dinámico de Categorías:** Interfaz SPA-like (Single Page Application simulada) para cambiar entre categorías (Juvenil, Cadete, etc.) sin recargas innecesarias.
+3.  **Higiene de Código (Refactorización):**
+    * Centralización de estilos mediante `variables.css`.
+    * Separación de responsabilidades (Styles, Scripts, Markup).
+    * Optimización de recursos (`loading="lazy"`).
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Repositorio
 
 ```text
 /
-├── index.html          # Landing page
-├── equipos.html        # Listado de categorías (con carruseles)
-├── historia.html       # Narrativa del club
-├── directivos.html     # Organigrama
-├── contacto.html       # Mapa y datos
+├── index.html          # Landing page principal
+├── equipos.html        # Módulo de gestión de categorías y plantillas
+├── historia.html       # Narrativa corporativa
+├── directivos.html     # Organigrama institucional
+├── contacto.html       # Ubicación y datos de contacto
 ├── styles/
-│   ├── common.css      # Reset y estilos base
-│   ├── variables.css   # Tokens de diseño (Colores/Fuentes)
-│   ├── media-queries.css # Responsividad global
-│   └── ...             # Estilos específicos
+│   ├── variables.css   # Tokens de diseño (Colores corporativos/Fuentes)
+│   ├── common.css      # Estilos base y reset
+│   ├── media-queries.css # Reglas de responsividad
+│   └── ...             # Estilos modulares
 └── scripts/
-    └── scripts.js      # Lógica de carrusel, modal y menú
+    └── scripts.js      # Lógica del carrusel, modal y navegación
