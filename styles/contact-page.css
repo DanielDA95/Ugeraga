@@ -1,66 +1,105 @@
-/* Estilo principal para la página */
-.page-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    width: 100%; 
-    min-height: 100vh; /* Asegurar que la altura mínima sea del 100% de la pantalla */
-    box-sizing: border-box; /* Incluir padding y border en los cálculos de ancho y alto */
+/* --- CONTENEDOR PRINCIPAL --- */
+.contact-page-container {
     padding: 20px;
-    background-color: #fff; /* Fondo blanco para toda la página */
-}
-
-/* Flexbox para centrar contenido dentro de la cuadrícula */
-.contact-grid-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-/* Ajustes de la sección del mapa */
-.mapa {
-    width: 100%; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    padding: 10%; 
-    box-sizing: border-box; 
-}
-
-.mapa iframe {
-    width: 100%; 
-    height: 100%; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-/* Ajustes para la barra lateral de metadatos */
-.company-metadata-sidebar-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.company-metadata-sidebar-wrapper > .logo img {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
-.company-metadata-sidebar-wrapper > .company-details-wrapper {
-    margin: 20px 0;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.25em;
+    background-color: #fff;
+}
+
+/* --- GRID LAYOUT (La estructura) --- */
+.contact-grid-wrapper {
+    display: grid;
+    /* En escritorio: 1 columna para info, 1 para mapa */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; /* Espacio entre columnas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar en la pantalla */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* --- COLUMNA IZQUIERDA: INFORMACIÓN --- */
+.company-metadata-sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centramos todo */
+    padding: 20px;
+}
+
+.company-metadata-sidebar-wrapper .logo img {
+    max-width: 180px;
+    margin-bottom: 30px;
+}
+
+/* Bloques de detalles (Icono + Texto) */
+.company-details-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Para que no se estire demasiado */
+    margin-bottom: 25px;
+    background-color: #f9f9f9; /* Un fondo sutil para resaltar */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.company-details-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo de los Iconos */
+.icon-box {
+    background-color: #09386f; /* Azul del club */
+    color: #E6D847; /* Amarillo */
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    border-radius: 50%;
+    font-size: 1.2em;
+    margin-right: 20px;
+    flex-shrink: 0; /* Evita que el icono se aplaste */
 }
 
-.company-metadata-sidebar-wrapper > .company-details-wrapper i {
-    color: #E6D847;
-    margin-right: 10px;
+.info-text {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.info-text strong {
+    color: #09386f;
+}
+
+/* --- COLUMNA DERECHA: MAPA --- */
+.mapa-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 450px; /* Altura asegurada */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border: 5px solid white; /* Marco tipo foto */
+}
+
+.mapa-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* --- RESPONSIVE (Móviles) --- */
+/* Esto estaba en media-queries.css antes, pero es mejor tenerlo junto al componente */
+@media (max-width: 900px) {
+    .contact-grid-wrapper {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .mapa-wrapper {
+        min-height: 300px; /* Mapa más pequeño en móvil */
+        margin-top: 30px;
+    }
 }
