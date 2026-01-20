@@ -46,3 +46,19 @@
     margin-bottom: 20px;
     text-align: center;
 }
+
+/* Añadir a styles/square-grid.css */
+
+.square-text-wrapper h3 {
+    color: #E6D847; /* El amarillo dorado del club */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.director-name {
+    font-size: 1.2rem;
+    color: #09386f; /* Azul */
+    margin-bottom: 15px;
+}
