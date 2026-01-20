@@ -1,11 +1,39 @@
-body {
-    margin: 0px;
-    font-family: 'Lato', sans-serif;
+/* --- VARIABLES GLOBALES & RESET --- */
+:root {
+    /* Paleta de Colores del Club */
+    --primary-blue: #09386f;
+    --accent-gold: #E6D847;
+    --text-grey: #cbcbcb;
+    --text-dark: #333333;
+    --white: #ffffff;
+    
+    /* Tipografía */
+    --font-main: 'Lato', sans-serif;
 }
-h1 {
+
+/* Reset básico para evitar problemas de maquetación */
+* {
+    box-sizing: border-box; /* El padding no aumenta el ancho total */
+}
+
+body {
     margin: 0;
     padding: 0;
-    font-size: 1;
-    font-weight: normal;
+    font-family: var(--font-main);
+    background-color: var(--white);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased; /* Texto más nítido en Mac */
+}
+
+/* Estilos base para imágenes */
+img {
+    max-width: 100%; /* Evita que las imágenes se salgan de la pantalla en móvil */
+    display: block; /* Elimina el espacio blanco fantasma debajo de las imágenes */
+}
+
+/* Títulos genéricos (Se sobrescriben en clases específicas) */
+h1, h2, h3 {
+    margin: 0;
     line-height: 1.2;
+    font-weight: 700;
 }
