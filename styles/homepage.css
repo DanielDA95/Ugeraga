@@ -1,197 +1,303 @@
+/* --- HERO SECTION --- */
+.hero-section {
+    /* Asegúrate de que la ruta sea correcta desde la carpeta styles */
+    background-image: url('../images/Backgrounds/ugeragateam.jpg');
+    height: 300px; /* Altura fija para el banner */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- SECCIÓN DE SUSCRIPCIÓN (Hazte Socio) --- */
 .subscribe {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;   
+    padding: 30px 20px;   
 }
 
 .subscribe-button {
-    font-size: 20px;
-    font-weight: bold;
-    animation: fadeIn 2s ease-in-out; 
     font-family: 'Arial', sans-serif; 
-    color: #333;
-    border-width: 400px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);   
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.subscribe-button {
-    display: center;
     background-color: #09386f; 
     color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 15px 60px; /* Padding más razonable que 100px */
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     text-decoration: none;
-    margin-top: 20px; 
-    border-width: 4px; 
-   
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    transition: all 0.3s ease;
+    
+    /* Animación */
+    animation: fadeIn 2s ease-in-out; 
 }
 
 .subscribe-button:hover {
     background-color: #E6D847;
     color: black;
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
 }
 
-.hero-section {
-    background-image: url(../images/Backgrounds/ugeragateam.jpg);
-    padding: 100px;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
+/* --- SECCIONES DE CONTENIDO (Features & News) --- */
 .features-section {
-    height: auto;
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Lato', sans-serif;
     padding: 20px;
-    position: relative; 
-    overflow: hidden; 
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto; /* Centrado horizontal */
 }
 
-h2 {
+/* Títulos de sección (Sustituye al h2 global peligroso) */
+.news-item h2, 
+.category-header h2 {
     background-color: #09386f;
     color: white;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     text-align: center;
     margin-bottom: 20px;
-    margin: 0;
     font-size: 1.5em;
+    display: inline-block; /* Para que el fondo se ajuste al texto */
 }
 
 .news-wrapper {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
     margin-top: 20px;
 }
 
 .news-item {
     display: flex;
     justify-content: center;
-    text-align: justify;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 1px;
-    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
 }
 
 .news-item p {
     max-width: 800px;
+    margin-bottom: 15px;
 }
 
-.news-item a {
-    text-decoration: none; /* Quitar el subrayado */
-    color: inherit; /* Mantener el color del texto original */
-    transition: color 0.3s ease; /* Agregar transición para un cambio suave de color */
+/* Enlaces destacados (Tablas de posiciones) */
+.standings-link {
+    text-decoration: none;
+    color: #09386f;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #09386f;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre texto e icono */
 }
 
-.news-item a:visited {
-    color: inherit; /* Mantener el color del texto original después de hacer clic */
+.standings-link:hover {
+    background-color: #09386f;
+    color: #fff;
 }
 
-/* Cambiar el color a dorado al pasar el ratón */
-.news-item a:hover {
-    color: #E6D847; /* Cambiar a dorado */
-    font-weight: bold; /* Hacer el texto más llamativo */
-}
-
-
+/* --- GALERÍA DE IMÁGENES --- */
 .gallery-section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    background-color: #f9f9f9; /* Fondo sutil para diferenciar sección */
 }
 
 .gallery-title {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .gallery-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.gallery-item {
-    margin: 10px;
+    gap: 15px; /* Espacio entre fotos */
 }
 
 .gallery-image {
-    width: 200px; /* Ajusta según tus necesidades */
-    height: auto;
+    width: 250px; 
+    height: 180px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .gallery-image:hover {
-    transform: scale(1.5);
+    transform: scale(1.05); /* Zoom más suave (1.5 era excesivo) */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 2;
 }
 
+/* --- MODAL (Visor de fotos) --- */
 .modal {
-    display: none; /* Ocultamos el modal por defecto */
+    display: none; 
     position: fixed;
-    z-index: 999;
-    padding-top: 100px;
+    z-index: 2000; /* Asegurar que está por encima de todo */
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    max-height: 80vh; /* Para que no se salga de la pantalla en vertical */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
 }
 
 #caption {
     text-align: center;
-    color: #fff;
-    margin-top: 10px;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 18px;
 }
 
 .close {
     position: absolute;
     top: 20px;
     right: 30px;
-    color: #fff;
+    color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
+    transition: 0.3s;
     cursor: pointer;
+    background: none;
+    border: none;
 }
+
+.close:hover {
+    color: #E6D847;
+}
+
+/* --- 🎠 CARRUSEL (AÑADIDO NUEVO) --- */
+/* Vital para equipos.html */
+.carousel-container {
+    position: relative;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: 20px auto;
+    overflow: hidden; /* Oculta las fotos que se salen */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* La magia del movimiento */
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%; /* Cada foto ocupa el 100% del contenedor */
+    flex-shrink: 0; /* Evita que se encojan */
+    object-fit: cover;
+    height: 450px; /* Altura fija para todas las fotos */
+}
+
+/* Botones del carrusel */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #E6D847;
+}
+
+/* --- SELECTOR DE CATEGORÍAS (Para equipos.html) --- */
+.links-wrapper2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.dropbtn {
+    background-color: #09386f;
+    color: white;
+    padding: 16px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.dropbtn:hover, .dropdown:hover .dropbtn {
+    background-color: #072a52;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%); /* Centrar el desplegable */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
