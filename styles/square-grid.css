@@ -1,35 +1,48 @@
 .squares-wrapper {
     display: flex;
     justify-content: center;
-    margin: 20px 20px 20px 20px;
-}
-.squares-wrapper > .squares {
-    width: 1000px;
-}
-.squares-wrapper > .squares > .square {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.square > .img-wrapper img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
+    /* Aquí recuperamos el espacio del spacer60 borrado */
+    margin: 60px 20px; 
 }
 
-.square > .square-text-wrapper {
+.squares {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.square {
+    display: grid;
+    /* Esto crea dos columnas iguales */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; /* Espacio entre imagen y texto */
+    margin-bottom: 60px; /* Separación entre cada bloque de historia */
+    align-items: center; /* Centra el texto verticalmente respecto a la foto */
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 400px; /* Bajé un poco la altura para que no sea tan gigante */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    display: block; /* Elimina espacio fantasma bajo la imagen */
+}
+
+.square-text-wrapper {
     display: flex;
     justify-content: center;
     text-align: justify;
     align-items: center;
     flex-direction: column;
-    padding: 42px;
+    padding: 20px; /* Reducido porque ya tenemos 'gap' en el grid */
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 1.8;
 }
-.square > .square-text-wrapper h1 {
-    color: #E6D847;
+
+/* IMPORTANTE: Cambiado de h1 a h2 para coincidir con el HTML */
+.square-text-wrapper h2 {
+    color: #E6D847; /* Amarillo */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
