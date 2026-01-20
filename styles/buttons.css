@@ -1,18 +1,33 @@
+/* Botón Genérico */
 .btn {
-    background-color: #E6D847;
-    color: #09386f;
-    font-size: 1.25em;
-    padding: 10px 25px;
-    border: 1px solid #E6D847;
-    border-radius: 2px;
+    background-color: var(--accent-gold);
+    color: var(--primary-blue);
+    font-family: var(--font-main);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: 2px solid var(--accent-gold);
+    border-radius: 4px; /* Un poco más redondeado */
     outline: none;
-    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
+
+.btn:hover {
+    background-color: transparent; /* Efecto "Ghost button" al pasar el ratón */
+    color: var(--accent-gold); 
+}
+
 .btn:active {
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(0.98); /* Efecto de click */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .centred-btn-wrapper {
     display: flex;
     justify-content: center;
+    margin: 20px 0;
+    width: 100%;
 }
