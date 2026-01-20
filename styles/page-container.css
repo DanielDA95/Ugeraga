@@ -1,25 +1,52 @@
 .page-container {
     display: flex;
     justify-content: center;
-    text-align: justify;
-    font-family:'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
+    padding: 0 20px; /* Margen de seguridad para móviles */
 }
 
-.page-container > .content-wrapper {
-    width: 1000px;
+/* Quitamos los ">" para que sea más flexible */
+.content-wrapper {
+    width: 100%;
+    max-width: 1000px; /* Mejor que width fijo para responsive */
     text-align: justify;
 }
 
-.page-container > .content-wrapper > #history {
-    width: 350px;
-    margin: 23px 40px 20px 20px; 
+/* Imagen flotante dentro del texto */
+#history {
+    width: 350px; /* Podrías usar porcentajes para móviles, ej: 40% */
+    max-width: 100%;
+    margin: 23px 40px 20px 0; /* Margen derecho para separar del texto */
     float: left; 
     object-fit: cover;
     border-radius: 10px; 
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
 }
 
-.page-container > .content-wrapper p {
+/* Párrafos */
+.content-wrapper p {
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 1.8; /* Un poco más aireado que 30px */
+    margin-bottom: 20px;
+    color: #333; /* Un gris oscuro para mejor lectura */
+}
+
+/* --- ESTILOS NUEVOS PARA LOS TÍTULOS --- */
+
+/* Título principal de la sección (Nuestros Orígenes) */
+.content-wrapper h2 {
+    color: #09386f; /* Azul del club */
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E6D847; /* Detalle estético sutil */
+    display: inline-block;
+}
+
+/* Subtítulos (La fundación...) */
+.content-wrapper h3 {
+    color: #09386f;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
