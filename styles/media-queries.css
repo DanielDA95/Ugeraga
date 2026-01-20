@@ -1,97 +1,101 @@
-@media (max-width: 615px) { 
-    .hero-section {
-        padding: 50px 10px;
-    }
-    .features-section, .footer-structure-wrapper {
-        height: 100%;
-    }
-    .features-section > .columns-wrapper, .contact-grid-wrapper {
-        width: 100%;
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-    .page-container {
-        padding: 0 21px;
-    }
-    .content-wrapper > #history {
-        margin: 10px 10px 0 0 !important; 
-    }
-    .square {
-        grid-template-columns: 1fr !important;
-    }
-    .square > .img-wrapper {
-        order: 1;
-    }
-    .square > .square-text-wrapper {
-        order: 2;
-    }
-    .form input, .form textarea {
-        padding: 1.5rem 0;
-    }
-}
-
+/* --- TABLETS Y PANTALLAS MEDIANAS (Max 768px) --- */
 @media (max-width: 768px) {
-    .navigation-wrapper, .links-wrapper, .links-wrapper-footer {
+    
+    /* 1. HEADER Y NAVEGACIÓN */
+    .navigation-wrapper {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .links-wrapper {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-    .left-column, .center-column, .right-column, .button-column {
-        flex: 1;
-        text-align: center;
-    }
-    .nav-link {
-        margin: 10px 0; 
-    }
-    .right-column {
-        text-align: center;
-    }
-    #address-wrapper {
-        font-size: 14px;
-    }
-    .icons {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .page-container {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
-    }
-    .company-metadata-sidebar-wrapper {
-        order: 1; /* Información de la empresa primero */
-    }
-    .mapa {
-        order: 2; /* Mapa después de la información */
         width: 100%;
-        padding: 15px;
-        height: 300px; /* Altura ajustada en pantallas más pequeñas */
     }
-    .mapa iframe {
-        height: 100%;
+
+    .nav-link {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1); /* Separador sutil */
+    }
+
+    /* 2. GRID GENERAL (Historia, Equipos, Directivos) */
+    .squares-wrapper {
+        margin: 30px 10px;
+    }
+
+    .square {
+        /* Convertimos el Grid de 2 columnas a Flex vertical */
+        display: flex; 
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Reordenamos para que la imagen siempre salga PRIMERO en móvil */
+    .square .img-wrapper {
+        order: 1; 
+        width: 100%;
+    }
+    
+    .square .square-text-wrapper {
+        order: 2;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .img-wrapper img {
+        height: auto; /* Altura automática para no deformar */
+        max-height: 300px;
+    }
+
+    /* 3. PÁGINA DE CONTACTO */
+    .contact-grid-wrapper {
+        grid-template-columns: 1fr; /* 1 Columna */
+        gap: 20px;
+    }
+
+    .mapa-wrapper {
+        min-height: 300px;
     }
 }
 
+/* --- MÓVILES PEQUEÑOS (Max 480px) --- */
 @media (max-width: 480px) {
+    
+    /* Header compacto */
+    .left-column h1 {
+        font-size: 24px;
+    }
+
     .banner-image img {
-        max-width: 100px;
+        width: 80px; /* Logo más pequeño */
+        height: auto;
     }
-    .nav-link a, .contact-icon a {
-        font-size: 14px; 
+
+    /* Textos más legibles */
+    p, li {
+        font-size: 16px;
+        line-height: 1.5;
     }
-    #address-wrapper {
-        font-size: 12px; 
-    }
-    .company-details-wrapper i {
-        font-size: 1.2em;
-    }
-    .company-details-wrapper div {
-        font-size: 14px;
-    }
-    .mapa {
-        height: 250px; /* Ajuste de la altura del mapa para móviles */
-    }
+
+    /* Footer en una sola columna */
     .links-wrapper-footer {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 15px;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+    
+    /* Ajuste de Carrusel */
+    .carousel-container {
+        aspect-ratio: 1 / 1; /* Cuadrado en móvil para aprovechar altura */
+    }
+    
+    .carousel-slide img {
+        object-fit: cover;
     }
 }
