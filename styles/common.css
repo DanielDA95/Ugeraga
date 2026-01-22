@@ -1,19 +1,14 @@
-/* --- VARIABLES GLOBALES & RESET --- */
 :root {
-    /* Paleta de Colores del Club */
     --primary-blue: #09386f;
     --accent-gold: #E6D847;
     --text-grey: #cbcbcb;
     --text-dark: #333333;
     --white: #ffffff;
-    
-    /* Tipografía */
     --font-main: 'Lato', sans-serif;
 }
 
-/* Reset básico para evitar problemas de maquetación */
 * {
-    box-sizing: border-box; /* El padding no aumenta el ancho total */
+    box-sizing: border-box;
 }
 
 body {
@@ -22,16 +17,15 @@ body {
     font-family: var(--font-main);
     background-color: var(--white);
     color: var(--text-dark);
-    -webkit-font-smoothing: antialiased; /* Texto más nítido en Mac */
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Estilos base para imágenes */
 img {
-    max-width: 100%; /* Evita que las imágenes se salgan de la pantalla en móvil */
-    display: block; /* Elimina el espacio blanco fantasma debajo de las imágenes */
+    max-width: 100%; 
+    display: block; 
 }
 
-/* Títulos genéricos (Se sobrescriben en clases específicas) */
+
 h1, h2, h3 {
     margin: 0;
     line-height: 1.2;
