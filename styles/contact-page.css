@@ -1,27 +1,24 @@
-/* --- CONTENEDOR PRINCIPAL --- */
 .contact-page-container {
     padding: 20px;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
 }
 
-/* --- GRID LAYOUT (La estructura) --- */
+
 .contact-grid-wrapper {
     display: grid;
-    /* En escritorio: 1 columna para info, 1 para mapa */
     grid-template-columns: 1fr 1fr; 
-    gap: 40px; /* Espacio entre columnas */
+    gap: 40px; 
     max-width: 1200px;
-    margin: 0 auto; /* Centrar en la pantalla */
-    align-items: center; /* Centrar verticalmente */
+    margin: 0 auto;
+    align-items: center;
 }
 
-/* --- COLUMNA IZQUIERDA: INFORMACIÓN --- */
 .company-metadata-sidebar-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centramos todo */
+    align-items: center; 
     padding: 20px;
 }
 
@@ -30,14 +27,13 @@
     margin-bottom: 30px;
 }
 
-/* Bloques de detalles (Icono + Texto) */
 .company-details-wrapper {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Para que no se estire demasiado */
+    max-width: 400px;
     margin-bottom: 25px;
-    background-color: #f9f9f9; /* Un fondo sutil para resaltar */
+    background-color: #f9f9f9; 
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -49,10 +45,10 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Estilo de los Iconos */
+
 .icon-box {
-    background-color: #09386f; /* Azul del club */
-    color: #E6D847; /* Amarillo */
+    background-color: #09386f; 
+    color: #E6D847; 
     width: 50px;
     height: 50px;
     display: flex;
@@ -61,7 +57,7 @@
     border-radius: 50%;
     font-size: 1.2em;
     margin-right: 20px;
-    flex-shrink: 0; /* Evita que el icono se aplaste */
+    flex-shrink: 0; 
 }
 
 .info-text {
@@ -74,15 +70,14 @@
     color: #09386f;
 }
 
-/* --- COLUMNA DERECHA: MAPA --- */
 .mapa-wrapper {
     width: 100%;
     height: 100%;
-    min-height: 450px; /* Altura asegurada */
+    min-height: 450px; 
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border: 5px solid white; /* Marco tipo foto */
+    border: 5px solid white;
 }
 
 .mapa-wrapper iframe {
@@ -91,15 +86,13 @@
     display: block;
 }
 
-/* --- RESPONSIVE (Móviles) --- */
-/* Esto estaba en media-queries.css antes, pero es mejor tenerlo junto al componente */
 @media (max-width: 900px) {
     .contact-grid-wrapper {
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr; 
     }
 
     .mapa-wrapper {
-        min-height: 300px; /* Mapa más pequeño en móvil */
+        min-height: 300px;
         margin-top: 30px;
     }
 }
