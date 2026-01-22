@@ -1,17 +1,11 @@
-/* --- UTILIDADES GENERALES --- */
-/* (Los spacers antiguos .spacer60 han sido eliminados por mala práctica. 
-    Usaremos margins en los componentes correspondientes) */
-
-/* Contenedor centralizado para secciones */
 #content-container {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box; /* Vital para que el padding no rompa el ancho */
+    box-sizing: border-box;
 }
 
-/* Títulos y textos dentro del contenedor */
 #content-container h2 {
     text-align: center;
     margin: 0 0 20px 0;
@@ -27,23 +21,20 @@
     line-height: 1.6;
 }
 
-/* --- CARRUSEL DE IMÁGENES --- */
 .carousel-container {
     position: relative;
     max-width: 100%;
-    margin: 20px auto 40px auto; /* Margen inferior extra para separar del botón */
+    margin: 20px auto 40px auto; 
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    background-color: #f0f0f0; /* Fondo gris pálido mientras carga la foto */
-    
-    /* Mantiene proporción 3:2 (Panorámica estándar) */
+    background-color: #f0f0f0;
     aspect-ratio: 3 / 2; 
 }
 
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición más suave */
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     width: 100%;
     height: 100%;
 }
@@ -51,17 +42,16 @@
 .carousel-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cambiado a COVER para que no queden bordes blancos feos */
+    object-fit: cover; 
     object-position: center;
-    flex-shrink: 0; /* Asegura que la imagen no se aplaste */
+    flex-shrink: 0;
 }
 
-/* Botones de Navegación (Prev/Next) */
 .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(9, 56, 111, 0.7); /* Azul corporativo semitransparente */
+    background-color: rgba(9, 56, 111, 0.7);
     color: white;
     border: none;
     width: 45px;
@@ -73,7 +63,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
-    z-index: 10; /* Asegura que estén por encima de la foto */
+    z-index: 10;
 }
 
 .prev { left: 15px; }
@@ -82,5 +72,5 @@
 .prev:hover, .next:hover {
     background-color: var(--accent-gold);
     color: var(--primary-blue);
-    transform: translateY(-50%) scale(1.1); /* Efecto pop */
+    transform: translateY(-50%) scale(1.1);
 }
