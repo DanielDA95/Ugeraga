@@ -1,8 +1,6 @@
-/* --- HERO SECTION --- */
 .hero-section {
-    /* Asegúrate de que la ruta sea correcta desde la carpeta styles */
     background-image: url('../images/Backgrounds/ugeragateam.jpg');
-    height: 300px; /* Altura fija para el banner */
+    height: 300px; 
     width: 100%;
     background-position: center;
     background-repeat: no-repeat; 
@@ -12,7 +10,6 @@
     justify-content: center;
 }
 
-/* --- SECCIÓN DE SUSCRIPCIÓN (Hazte Socio) --- */
 .subscribe {
     display: flex;
     justify-content: center;
@@ -25,7 +22,7 @@
     font-family: 'Arial', sans-serif; 
     background-color: #09386f; 
     color: white;
-    padding: 15px 60px; /* Padding más razonable que 100px */
+    padding: 15px 60px; 
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -35,15 +32,13 @@
     text-decoration: none;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
     transition: all 0.3s ease;
-    
-    /* Animación */
     animation: fadeIn 2s ease-in-out; 
 }
 
 .subscribe-button:hover {
     background-color: #E6D847;
     color: black;
-    transform: translateY(-2px); /* Pequeño efecto de elevación */
+    transform: translateY(-2px); 
 }
 
 @keyframes fadeIn {
@@ -51,7 +46,6 @@
     100% { opacity: 1; transform: translateY(0); }
 }
 
-/* --- SECCIONES DE CONTENIDO (Features & News) --- */
 .features-section {
     display: flex;
     flex-direction: column;
@@ -59,10 +53,9 @@
     font-family: 'Lato', sans-serif;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto 30px auto; /* Centrado horizontal */
+    margin: 0 auto 30px auto; 
 }
 
-/* Títulos de sección (Sustituye al h2 global peligroso) */
 .news-item h2, 
 .category-header h2 {
     background-color: #09386f;
@@ -72,7 +65,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.5em;
-    display: inline-block; /* Para que el fondo se ajuste al texto */
+    display: inline-block; 
 }
 
 .news-wrapper {
@@ -96,7 +89,6 @@
     margin-bottom: 15px;
 }
 
-/* Enlaces destacados (Tablas de posiciones) */
 .standings-link {
     text-decoration: none;
     color: #09386f;
@@ -107,7 +99,7 @@
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 10px; /* Espacio entre texto e icono */
+    gap: 10px; 
 }
 
 .standings-link:hover {
@@ -115,11 +107,10 @@
     color: #fff;
 }
 
-/* --- GALERÍA DE IMÁGENES --- */
 .gallery-section {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Fondo sutil para diferenciar sección */
+    background-color: #f9f9f9; 
 }
 
 .gallery-title {
@@ -132,13 +123,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Espacio entre fotos */
+    gap: 15px; 
 }
 
 .gallery-image {
     width: 250px; 
-    height: 180px; /* Altura fija para uniformidad */
-    object-fit: cover; /* Recorta la imagen para que no se deforme */
+    height: 180px; 
+    object-fit: cover; 
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -146,16 +137,15 @@
 }
 
 .gallery-image:hover {
-    transform: scale(1.05); /* Zoom más suave (1.5 era excesivo) */
+    transform: scale(1.05); 
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     z-index: 2;
 }
 
-/* --- MODAL (Visor de fotos) --- */
 .modal {
     display: none; 
     position: fixed;
-    z-index: 2000; /* Asegurar que está por encima de todo */
+    z-index: 2000; 
     padding-top: 50px;
     left: 0;
     top: 0;
@@ -169,7 +159,7 @@
     margin: auto;
     display: block;
     max-width: 90%;
-    max-height: 80vh; /* Para que no se salga de la pantalla en vertical */
+    max-height: 80vh; 
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(255,255,255,0.1);
 }
@@ -198,31 +188,28 @@
     color: #E6D847;
 }
 
-/* --- 🎠 CARRUSEL (AÑADIDO NUEVO) --- */
-/* Vital para equipos.html */
 .carousel-container {
     position: relative;
-    max-width: 800px; /* Ancho máximo del carrusel */
+    max-width: 800px; 
     margin: 20px auto;
-    overflow: hidden; /* Oculta las fotos que se salen */
+    overflow: hidden; 
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* La magia del movimiento */
+    transition: transform 0.5s ease-in-out; 
     width: 100%;
 }
 
 .carousel-slide img {
-    width: 100%; /* Cada foto ocupa el 100% del contenedor */
-    flex-shrink: 0; /* Evita que se encojan */
+    width: 100%; 
+    flex-shrink: 0; 
     object-fit: cover;
-    height: 450px; /* Altura fija para todas las fotos */
+    height: 450px; 
 }
 
-/* Botones del carrusel */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -250,7 +237,6 @@
     color: #E6D847;
 }
 
-/* --- SELECTOR DE CATEGORÍAS (Para equipos.html) --- */
 .links-wrapper2 {
     text-align: center;
     margin: 30px 0;
@@ -286,7 +272,7 @@
     z-index: 100;
     border-radius: 5px;
     left: 50%;
-    transform: translateX(-50%); /* Centrar el desplegable */
+    transform: translateX(-50%); 
 }
 
 .dropdown-content a {
