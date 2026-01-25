@@ -1,7 +1,5 @@
-/* --- TABLETS Y PANTALLAS MEDIANAS (Max 768px) --- */
 @media (max-width: 768px) {
     
-    /* 1. HEADER Y NAVEGACIÓN */
     .navigation-wrapper {
         flex-direction: column;
         padding: 20px 10px;
@@ -17,23 +15,20 @@
         margin: 10px 0;
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.1); /* Separador sutil */
+        border-bottom: 1px solid rgba(255,255,255,0.1); 
     }
 
-    /* 2. GRID GENERAL (Historia, Equipos, Directivos) */
     .squares-wrapper {
         margin: 30px 10px;
     }
 
     .square {
-        /* Convertimos el Grid de 2 columnas a Flex vertical */
         display: flex; 
         flex-direction: column;
         gap: 20px;
         margin-bottom: 40px;
     }
 
-    /* Reordenamos para que la imagen siempre salga PRIMERO en móvil */
     .square .img-wrapper {
         order: 1; 
         width: 100%;
@@ -46,13 +41,12 @@
     }
 
     .img-wrapper img {
-        height: auto; /* Altura automática para no deformar */
+        height: auto; 
         max-height: 300px;
     }
 
-    /* 3. PÁGINA DE CONTACTO */
     .contact-grid-wrapper {
-        grid-template-columns: 1fr; /* 1 Columna */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
@@ -61,26 +55,22 @@
     }
 }
 
-/* --- MÓVILES PEQUEÑOS (Max 480px) --- */
 @media (max-width: 480px) {
     
-    /* Header compacto */
     .left-column h1 {
         font-size: 24px;
     }
 
     .banner-image img {
-        width: 80px; /* Logo más pequeño */
+        width: 80px;
         height: auto;
     }
 
-    /* Textos más legibles */
     p, li {
         font-size: 16px;
         line-height: 1.5;
     }
 
-    /* Footer en una sola columna */
     .links-wrapper-footer {
         flex-direction: column;
         gap: 15px;
@@ -90,9 +80,8 @@
         gap: 20px;
     }
     
-    /* Ajuste de Carrusel */
     .carousel-container {
-        aspect-ratio: 1 / 1; /* Cuadrado en móvil para aprovechar altura */
+        aspect-ratio: 1 / 1; 
     }
     
     .carousel-slide img {
