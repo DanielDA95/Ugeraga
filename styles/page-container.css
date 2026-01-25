@@ -2,47 +2,40 @@
     display: flex;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-    padding: 0 20px; /* Margen de seguridad para móviles */
+    padding: 0 20px; 
 }
 
-/* Quitamos los ">" para que sea más flexible */
 .content-wrapper {
     width: 100%;
-    max-width: 1000px; /* Mejor que width fijo para responsive */
+    max-width: 1000px; 
     text-align: justify;
 }
 
-/* Imagen flotante dentro del texto */
 #history {
-    width: 350px; /* Podrías usar porcentajes para móviles, ej: 40% */
+    width: 350px; 
     max-width: 100%;
-    margin: 23px 40px 20px 0; /* Margen derecho para separar del texto */
+    margin: 23px 40px 20px 0; 
     float: left; 
     object-fit: cover;
     border-radius: 10px; 
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
 }
 
-/* Párrafos */
 .content-wrapper p {
     letter-spacing: 1px;
-    line-height: 1.8; /* Un poco más aireado que 30px */
+    line-height: 1.8; 
     margin-bottom: 20px;
-    color: #333; /* Un gris oscuro para mejor lectura */
+    color: #333; 
 }
 
-/* --- ESTILOS NUEVOS PARA LOS TÍTULOS --- */
-
-/* Título principal de la sección (Nuestros Orígenes) */
 .content-wrapper h2 {
-    color: #09386f; /* Azul del club */
+    color: #09386f; 
     font-size: 2rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #E6D847; /* Detalle estético sutil */
+    border-bottom: 2px solid #E6D847; 
     display: inline-block;
 }
 
-/* Subtítulos (La fundación...) */
 .content-wrapper h3 {
     color: #09386f;
     font-size: 1.5rem;
